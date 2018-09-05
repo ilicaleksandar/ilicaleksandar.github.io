@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400|Slabo+27px');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import 'theme.scss';
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Slabo 27px';
+    background-image: url('../img/cork-wallet.png');
+    color: $text-color;
+}
+
+.skill-icon {
+    height: 40px;
+    width: 25px;
+    text-align: center;
+    display: inline-block;
+}

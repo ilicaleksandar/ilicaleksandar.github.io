@@ -1,0 +1,19 @@
+[
+    {
+        "period": "Class of 2015",
+        "title": "B.A.Sc in Computer Science",
+        "place": "Universidad Central de Venezuela"
+    },
+    {
+        "period": "2011 - Present",
+        "title": "Deputy Leader",
+        "place": "Olimpiada Venezolana de Informática",
+        "description": "Recruiting and training of the candidates for the International Olympiad in Informatics. Also planning of our participation on our annual participation on the event."
+    },
+    {
+        "period": "2010 - 2011",
+        "title": "International Olympiad in Informatics Contestant",
+        "place": "Toronto Canada and Bangkok Thailand",
+        "description": "I was a contestant representing my country (Venezuela) for two years in a row in the International Olympiads in Informatics, a global event that challanges students from all over the globe with problem solving algorithms."
+    }
+]

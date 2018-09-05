@@ -1,0 +1,29 @@
+@import 'mixins.scss';
+@import '../../node_modules/sass-mq/_mq.scss';
+
+// Theme colors
+$background-color: white;
+$text-color: #aaa;
+$primary: #1b64af;
+
+.section {
+    @include mq($from: mobile) { padding: 20px 50px; }
+    @include mq($from: tablet) { padding: 40px 120px; }
+    @include mq($from: desktop) { padding: 50px 200px; }
+    @include mq($from: wide) { padding: 60px 300px; }
+
+}
+
+.section-white {
+    background-color: rgba(white, 0.5);
+}
+
+.section-black {
+    background-color: rgba(#333, 0.9);
+    color: white;
+}
+
+.section-blue {
+    background-color: rgba(lighten(#1b64af, 30), 0.7);
+    color: #333;
+}

@@ -1,0 +1,38 @@
+@import '../styles/theme.scss';
+@import '../styles/mixins.scss';
+
+.about {
+    display: flex;
+    
+    @include mq(mobile) { flex-wrap: wrap; }
+    @include mq($from: tablet) { flex-wrap: nowrap; }
+
+    h2 {
+        font-family: 'Oswald';
+        text-transform: uppercase;
+    }
+
+    img.avatar {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .left-section {
+        color: $primary;
+        text-align: center;
+
+        @include mq($from: mobile) { margin-right: 20px; width: 100%; }
+        @include mq($from: tablet) { margin-right: 40px; width: 25%; }
+        @include mq($from: desktop) { margin-right: 60px; }
+    }
+
+    .right-section {
+        @include font-size(14);
+        text-align: justify;
+
+        @include mq($from: mobile) { padding: 20px; }
+        @include mq($from: tablet) { padding: 40px; }
+        @include mq($from: desktop) { padding: 60px; }
+    }
+}
