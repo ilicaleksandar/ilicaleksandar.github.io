@@ -14,7 +14,7 @@ export default class Education extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://api.github.com/repos/rjtm/rjtm.github.io/commits')
+        fetch('https://api.github.com/repos/ilicaleksandar/ilicaleksandar.github.io/commits')
             .then(res => res.json())
             .then(jsonData => {
                 let lastCommit = {
