@@ -12332,7 +12332,7 @@ var About = function (_React$Component) {
                         _react2.default.createElement(
                             'p',
                             null,
-                            'Hard working Full stack software engineer. Primary backend development. Java as a main language, Android fan with all-round knowledge. Experienced in working in multicultural teams \u2013 projects and presentations made during work on Improve Digital project (at Levi9) which included constant interaction with part of team based in Ukraine and client based in Netherlands and UK. Cooperative and open-minded. Open to learning new things everyday and improve myself in every way possible.'
+                            ' Full stack software engineer. Primary backend development. Java as a main language, Android fan with all-round knowledge. Experienced in working in multicultural teams \u2013 projects and presentations made during work on Improve Digital project (at Levi9) which included constant interaction with part of team based in Ukraine and client based in Netherlands and UK. Cooperative and open-minded. Open to learning new things everyday and improve myself in every way possible.'
                         ),
                         _react2.default.createElement(
                             'p',
@@ -12752,12 +12752,12 @@ var Header = function (_React$Component) {
                     { className: 'contact-info' },
                     _react2.default.createElement(
                         'a',
-                        { href: 'mailto:rjtm1992@gmail.com' },
+                        { href: 'mailto:alexilic92@gmail.com' },
                         'rjtm1992@gmail.com'
                     ),
                     _react2.default.createElement(
                         'a',
-                        { href: '/resume.pdf', className: 'pdf-download', download: 'RicardoMontero.pdf' },
+                        { href: '/resume.pdf', className: 'pdf-download', download: 'AleksandarIlic.pdf' },
                         'Download PDF'
                     )
                 ),
@@ -12784,11 +12784,11 @@ var Header = function (_React$Component) {
                         _react2.default.createElement(
                             'h2',
                             null,
-                            'Ricardo Montero ',
+                            'Ilic Aleksandar ',
                             _react2.default.createElement(
                                 'span',
                                 { className: 'light' },
-                                '(rjtm)'
+                                '(acailic)'
                             )
                         ),
                         _react2.default.createElement(
@@ -28048,7 +28048,7 @@ module.exports = g;
 /* 328 */
 /***/ (function(module, exports) {
 
-module.exports = [{"period":"Class of 2017","title":"M.A.Sc in Computer Science","place":"Faculty of techical sciences Novi Sad"}]
+module.exports = [{"period":"Class of 2017","title":"Master degree in Computer Science","place":"Faculty of techical sciences Novi Sad"}]
 
 /***/ }),
 /* 329 */
