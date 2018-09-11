@@ -11,15 +11,15 @@ export default class Header extends React.Component {
         return (
             <div className="header">
                 <div className="contact-info">
-                    <a href="mailto:rjtm1992@gmail.com">rjtm1992@gmail.com</a>
-                    <a href="/resume.pdf" className="pdf-download" download="RicardoMontero.pdf">Download PDF</a>
+                    <a href="mailto:alexilic92@gmail.com">rjtm1992@gmail.com</a>
+                    <a href="/resume.pdf" className="pdf-download" download="AleksandarIlic.pdf">Download PDF</a>
                 </div>
                 <Reveal effect="animated fadeInUp" className="header-container">
                     <h1><span className="light">Full-stack</span> Developer</h1>
                 </Reveal>
                 <Sticky className="sticky" stickyClassName="sticked">
                     <div className="nav">
-                        <h2>Ricardo Montero <span className="light">(rjtm)</span></h2>
+                        <h2>Ilic Aleksandar <span className="light">(acailic)</span></h2>
                         <ul className="nav-links">
                             <li>
                                 <Link to="about" spy={true} smooth={true} offset={-50}>About</Link>
