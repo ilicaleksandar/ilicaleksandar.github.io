@@ -12753,7 +12753,7 @@ var Header = function (_React$Component) {
                     _react2.default.createElement(
                         'a',
                         { href: 'mailto:alexilic92@gmail.com' },
-                        'rjtm1992@gmail.com'
+                        'alexilic92@gmail.com'
                     ),
                     _react2.default.createElement(
                         'a',
