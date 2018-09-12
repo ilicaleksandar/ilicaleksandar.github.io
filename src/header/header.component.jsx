@@ -15,8 +15,10 @@ export default class Header extends React.Component {
                     <a href="/resume.pdf" className="pdf-download" download="AleksandarIlic.pdf">Download PDF</a>
                 </div>
                 <Reveal effect="animated fadeInUp" className="header-container">
-                    <h1><span className="light">Full-stack</span> Developer</h1>
+                    <h1><span className="light">Software</span> Developer</h1>
+                    <h1><span className="light">Full-stack </span> </h1>
                 </Reveal>
+
                 <Sticky className="sticky" stickyClassName="sticked">
                     <div className="nav">
                         <h2>Ilic Aleksandar <span className="light">(acailic)</span></h2>

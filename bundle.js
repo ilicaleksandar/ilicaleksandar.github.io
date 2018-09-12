@@ -12770,9 +12770,19 @@ var Header = function (_React$Component) {
                         _react2.default.createElement(
                             'span',
                             { className: 'light' },
-                            'Full-stack'
+                            'Software'
                         ),
                         ' Developer'
+                    ),
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'light' },
+                            'Full-stack '
+                        ),
+                        ' '
                     )
                 ),
                 _react2.default.createElement(
