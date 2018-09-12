@@ -47,7 +47,7 @@ export default class Education extends React.Component {
                         <a href="https://github.com/acailic" target="_blank">
                             <img src={require('./github.png')} alt="Github"/>
                         </a>
-                        <a href="/resume.pdf" className="pdf-download" download="IlicAleksandar.pdf">
+                        <a href="https://resume.creddle.io/resume/5yd021417fr" className="pdf-download" download="IlicAleksandar.pdf">
                             <i className="material-icons">file_download</i>
                         </a>
                     </Reveal>

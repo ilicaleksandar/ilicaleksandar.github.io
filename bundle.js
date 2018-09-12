@@ -12463,7 +12463,7 @@ var Education = function (_React$Component) {
                         ),
                         _react2.default.createElement(
                             'a',
-                            { href: '/resume.pdf', className: 'pdf-download', download: 'IlicAleksandar.pdf' },
+                            { href: 'https://resume.creddle.io/resume/5yd021417fr', className: 'pdf-download', download: 'IlicAleksandar.pdf' },
                             _react2.default.createElement(
                                 'i',
                                 { className: 'material-icons' },
@@ -12757,7 +12757,7 @@ var Header = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         'a',
-                        { href: '/resume.pdf', className: 'pdf-download', download: 'AleksandarIlic.pdf' },
+                        { href: 'https://resume.creddle.io/resume/5yd021417fr', className: 'pdf-download', download: 'AleksandarIlic.pdf' },
                         'Download PDF'
                     )
                 ),

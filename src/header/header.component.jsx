@@ -12,7 +12,7 @@ export default class Header extends React.Component {
             <div className="header">
                 <div className="contact-info">
                     <a href="mailto:alexilic92@gmail.com">alexilic92@gmail.com</a>
-                    <a href="/resume.pdf" className="pdf-download" download="AleksandarIlic.pdf">Download PDF</a>
+                    <a href="https://resume.creddle.io/resume/5yd021417fr" className="pdf-download" download="AleksandarIlic.pdf">Download PDF</a>
                 </div>
                 <Reveal effect="animated fadeInUp" className="header-container">
                     <h1><span className="light">Software</span> Developer</h1>
