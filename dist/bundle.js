@@ -12332,12 +12332,12 @@ var About = function (_React$Component) {
                         _react2.default.createElement(
                             'p',
                             null,
-                            ' Full stack software engineer. Primary backend development. Java as a main language, Android fan with all-round knowledge. Experienced in working in multicultural teams \u2013 projects and presentations made during work on Improve Digital project (at Levi9) which included constant interaction with part of team based in Ukraine and client based in Netherlands and UK. Cooperative and open-minded. Open to learning new things everyday and improve myself in every way possible.'
+                            ' Full stack software engineer. Primary backend development. Java as a main language, Android fan with all-round knowledge. Experienced in working in multicultural teams \u2013 projects and presentations made during work on Improve Digital project (at Levi9) which included constant interaction with part of team based in Ukraine and client based in Netherlands and UK. Cooperative and open-minded. Open to learning new things everyday.'
                         ),
                         _react2.default.createElement(
                             'p',
                             null,
-                            'Master in Computer Science from the Faculty of Technical Sciences, University of Novi Sad.'
+                            'Master degree in Computer Science from the Faculty of Technical Sciences, University of Novi Sad.'
                         )
                     )
                 )
@@ -12753,7 +12753,7 @@ var Header = function (_React$Component) {
                     _react2.default.createElement(
                         'a',
                         { href: 'mailto:alexilic92@gmail.com' },
-                        'rjtm1992@gmail.com'
+                        'alexilic92@gmail.com'
                     ),
                     _react2.default.createElement(
                         'a',
@@ -12770,9 +12770,19 @@ var Header = function (_React$Component) {
                         _react2.default.createElement(
                             'span',
                             { className: 'light' },
-                            'Full-stack'
+                            'Software'
                         ),
                         ' Developer'
+                    ),
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'light' },
+                            'Full-stack '
+                        ),
+                        ' '
                     )
                 ),
                 _react2.default.createElement(
