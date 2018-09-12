@@ -56,7 +56,7 @@ export default class Education extends React.Component {
                     last updated { this.state.lastCommit.date } <a href={this.state.lastCommit.url} target="_blank">({this.state.lastCommit.sha})</a>
                 </div>
                 <div className="bottom-text">
-                    Ilic Aleksandar 2017
+                    Ilic Aleksandar 2018
                 </div>
             </Element>
         );

@@ -12489,7 +12489,7 @@ var Education = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'bottom-text' },
-                    'Ilic Aleksandar 2017'
+                    'Ilic Aleksandar 2018'
                 )
             );
         }
