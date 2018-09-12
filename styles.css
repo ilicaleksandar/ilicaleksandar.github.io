@@ -65,7 +65,8 @@ html, body {
   color: #333; }
 
 .header {
-  background: linear-gradient(rgba(27, 100, 175, 0.7), rgba(121, 177, 234, 0.7));
+  background: url(0997d328caf1105ae975a0b6ab9d7c6f.jpg);
+  backgroundSize: cover no-repeat;
   height: 100vh;
   margin: 0;
   color: white;
