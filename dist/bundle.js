@@ -27806,7 +27806,7 @@ module.exports = [{"title":"Levi9 IT Services","position":"Software Developer","
 /* 326 */
 /***/ (function(module, exports) {
 
-module.exports = [{"title":"Java","percent":90,"icon":"coffee"},{"title":"AngularJS","percent":45,"icon":"angular"},{"title":"Python","percent":45,"icon":"python"}]
+module.exports = [{"title":"Java","percent":90,"icon":"coffee"},{"title":"AngularJS","percent":45,"icon":"angular"},{"title":"Python","percent":45,"icon":"python"},{"title":"Docker","percent":75,"icon":"docker"},{"title":"Kubernetes","percent":35,"icon":"kubernetes"}]
 
 /***/ })
 /******/ ]);

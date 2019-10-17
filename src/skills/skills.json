@@ -15,5 +15,20 @@
         "title": "Python",
         "percent": 45,
         "icon": "python"
+    },
+    {
+        "title": "Docker",
+        "percent": 75,
+        "icon": "docker"
+    },
+    {
+        "title": "Kubernetes",
+        "percent": 35,
+        "icon": "kubernetes"
+    },
+    {
+        "title": "ReactJS",
+        "percent": 35,
+        "icon": "react"
     }
 ]
