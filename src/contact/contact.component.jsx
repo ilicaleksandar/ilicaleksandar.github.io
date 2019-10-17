@@ -42,10 +42,10 @@ export default class Education extends React.Component {
                             alexilic92@gmail.com
                         </a>
                         <a href="https://www.linkedin.com/in/aleksandar-ilić-a9b30b87/" target="_blank">
-                            <img src={require('./linkedin.png')} alt="LinkedIn"/>
+                            <img src={require('../header/linkedin.png')} alt="LinkedIn"/>
                         </a>
                         <a href="https://github.com/acailic" target="_blank">
-                            <img src={require('./github.png')} alt="Github"/>
+                            <img src={require('../header/github.png')} alt="Github"/>
                         </a>
                         <a href="https://resume.creddle.io/resume/5yd021417fr" className="pdf-download" download="IlicAleksandar.pdf">
                             <i className="material-icons">file_download</i>

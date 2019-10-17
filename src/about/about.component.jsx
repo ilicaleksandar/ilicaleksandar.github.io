@@ -17,8 +17,10 @@ export default class About extends React.Component {
                 </div>
                 <div className="right-section">
                     <Reveal effect="animated slideInUp">
-                        <p> Full stack software engineer. Primary backend development. Java as a main language, Android fan with all-round knowledge.
-                           Experienced in working in multicultural teams – projects and presentations made during work on Improve Digital project (at Levi9) which included constant interaction with part of team based in Ukraine and client based in Netherlands and UK. Cooperative and open-minded. Open to learning new things everyday.</p>
+                        <p> A software development craftsman with 4+ years of experience in the high-tech manufacturing and Internet industries. A collaborative developer and engineer with experience and education in the software sides of technology who thrives on discovery and accelerating performance.
+
+                            Areas of functional expertise:
+                            • Performance Engineering and Measurement • Systems Architecture and Operations • Technical Troubleshooting and Debugging • Teamwork and Cross-­‐functional Communication • Programming in Java, JavaScript and Python </p>
                         <p>Master degree in Computer Science from the Faculty of Technical Sciences, University of Novi Sad.</p>
                     </Reveal>
                     
