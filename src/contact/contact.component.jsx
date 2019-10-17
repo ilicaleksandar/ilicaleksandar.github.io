@@ -32,15 +32,13 @@ export default class Education extends React.Component {
             <Element className="section section-black contact" name="contact">
                 <div className="left-section">
                     <Reveal effect="animated slideInUp">
-                        <h2>Contact me</h2>
-                        <i className="material-icons">email</i>
+                        <h2>Aleksandar Ilic</h2>
+                        <img className="avatar" src={require('./avatar.jpg')} alt=""/>
                     </Reveal>
                 </div>
                 <div className="right-section">
                     <Reveal effect="animated slideInUp">
-                        <a href="mailto:alexilic92@gmail.com" className="mail">
-                            alexilic92@gmail.com
-                        </a>
+
                         <a href="https://www.linkedin.com/in/aleksandar-ilić-a9b30b87/" target="_blank">
                             <img src={require('../header/linkedin.png')} alt="LinkedIn"/>
                         </a>
@@ -51,9 +49,12 @@ export default class Education extends React.Component {
                             <i className="material-icons">file_download</i>
                         </a>
                     </Reveal>
-                </div>
-                <div className="commit-data">
-                    last updated { this.state.lastCommit.date } <a href={this.state.lastCommit.url} target="_blank">({this.state.lastCommit.sha})</a>
+                    <Reveal effect="animated slideInUp">
+                        <p> A software development craftsman with 4+ years of experience in the high-tech manufacturing and Internet industries. A collaborative developer and engineer with experience and education in the software sides of technology who thrives on discovery and accelerating performance.
+
+                           </p>
+                        <p>Master degree in Computer Science from the Faculty of Technical Sciences, University of Novi Sad.</p>
+                    </Reveal>
                 </div>
                 <div className="bottom-text">
                     Ilic Aleksandar 2018

@@ -1,22 +1,19 @@
 [
-    {
-        "title": "ReactJS",
-        "percent": 60,
-        "icon": "react"
-    },
-    {
-        "title": "Redux",
-        "percent": 60,
-        "icon": "redux"
-    },
-    {
-        "title": "AngularJS",
-        "percent": 65,
-        "icon": "angular"
-    },
+
     {
         "title": "Java",
         "percent": 90,
         "icon": "coffee"
+    },
+
+    {
+        "title": "AngularJS",
+        "percent": 45,
+        "icon": "angular"
+    },
+    {
+        "title": "Python",
+        "percent": 45,
+        "icon": "python"
     }
 ]
