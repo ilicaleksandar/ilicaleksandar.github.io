@@ -23,6 +23,10 @@ export default class Skills extends React.Component {
                         <SkillList skills={skillData} />
                     </Reveal>
                 </div>
+
+                <div className="bottom-text">
+                    Ilic Aleksandar 2019
+                </div>
             </Element>
         );
     }

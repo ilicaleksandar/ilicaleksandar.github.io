@@ -56,9 +56,6 @@ export default class Education extends React.Component {
                         <p>Master degree in Computer Science from the Faculty of Technical Sciences, University of Novi Sad.</p>
                     </Reveal>
                 </div>
-                <div className="bottom-text">
-                    Ilic Aleksandar 2018
-                </div>
             </Element>
         );
     }

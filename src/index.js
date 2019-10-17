@@ -12,6 +12,5 @@ ReactDOM.render(
     <StickyContainer>
         <Contact/>
         <Experience/>
-        <Blog/>
         <Skills/>
     </StickyContainer>, document.getElementById('root'));

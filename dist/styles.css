@@ -64,97 +64,35 @@ html, body {
   background-color: rgba(121, 177, 234, 0.7);
   color: #333; }
 
-.header {
-  background: linear-gradient(rgba(27, 100, 175, 0.7), rgba(121, 177, 234, 0.7));
-  height: 100vh;
-  margin: 0;
-  color: white;
+.blog {
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  .header .contact-info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-top: 5px; }
-    .header .contact-info a {
-      color: #1b64af;
-      font-family: "Oswald";
-      text-decoration: none;
-      font-size: 7px;
-      font-size: 0.875rem; }
-  .header .header-container {
-    -ms-flex: 1;
-        flex: 1;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center; }
-  .header .light {
-    font-weight: 300; }
-  .header h1 {
-    margin: 0;
-    text-transform: uppercase;
-    font-family: "Oswald";
-    font-size: 5.2vmax;
-    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
-    padding-left: 15px; }
-    @media (min-width: 20em) {
-      .header h1 {
-        padding-left: 15px; } }
-    @media (min-width: 46.25em) {
-      .header h1 {
-        padding-left: 50px; } }
-    @media (min-width: 61.25em) {
-      .header h1 {
-        padding-left: 100px; } }
-  .header h2 {
-    font-family: "Oswald";
-    text-transform: uppercase; }
-    .header h2 .light {
-      font-size: 15px; }
-  .header .nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    font-family: "Oswald"; }
-    @media (min-width: 20em) {
-      .header .nav {
-        display: none; } }
-    @media (min-width: 46.25em) {
-      .header .nav {
-        display: -ms-flexbox;
-        display: flex; } }
-    .header .nav ul {
-      list-style: none;
-      padding: 0; }
-      .header .nav ul li {
-        display: inline-block;
-        margin-right: 20px; }
-        .header .nav ul li a {
-          transition: all ease 1s;
-          cursor: pointer; }
-          .header .nav ul li a.active {
-            color: #1b64af; }
-    .header .nav h2 {
-      -ms-flex: 1;
-          flex: 1;
-      margin: 0;
-      margin-left: 20px; }
-  .header .sticky {
-    transition: 0.5s ease all; }
-    .header .sticky.sticked {
-      color: #333;
-      background-color: white;
-      z-index: 9999; }
-
-.fill {
-  height: 300vh; }
+  display: flex; }
+  @media (min-width: 20em) {
+    .blog {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  @media (min-width: 46.25em) {
+    .blog {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+  @media (min-width: 20em) {
+    .blog .left-section {
+      margin-right: 20px; } }
+  @media (min-width: 46.25em) {
+    .blog .left-section {
+      margin-right: 40px; } }
+  @media (min-width: 61.25em) {
+    .blog .left-section {
+      margin-right: 60px; } }
+  @media (min-width: 20em) {
+    .blog .right-section {
+      padding: 20px; } }
+  @media (min-width: 46.25em) {
+    .blog .right-section {
+      padding: 40px; } }
+  @media (min-width: 61.25em) {
+    .blog .right-section {
+      padding: 60px; } }
 @charset "UTF-8";
 
 /*!
@@ -3805,51 +3743,22 @@ html, body {
   background-color: rgba(121, 177, 234, 0.7);
   color: #333; }
 
-.about {
-  display: -ms-flexbox;
-  display: flex; }
-  @media (min-width: 20em) {
-    .about {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
-  @media (min-width: 46.25em) {
-    .about {
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; } }
-  .about h2 {
-    font-family: 'Oswald';
-    text-transform: uppercase; }
-  .about img.avatar {
-    width: 200px;
-    height: auto;
-    border-radius: 50%; }
-  .about .left-section {
-    color: #1b64af;
-    text-align: center; }
-    @media (min-width: 20em) {
-      .about .left-section {
-        margin-right: 20px;
-        width: 100%; } }
-    @media (min-width: 46.25em) {
-      .about .left-section {
-        margin-right: 40px;
-        width: 25%; } }
-    @media (min-width: 61.25em) {
-      .about .left-section {
-        margin-right: 60px; } }
-  .about .right-section {
-    font-size: 14px;
-    font-size: 1.75rem;
-    text-align: justify; }
-    @media (min-width: 20em) {
-      .about .right-section {
-        padding: 20px; } }
-    @media (min-width: 46.25em) {
-      .about .right-section {
-        padding: 40px; } }
-    @media (min-width: 61.25em) {
-      .about .right-section {
-        padding: 60px; } }
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald'; }
+  .blog-list .blog {
+    border-bottom: 1px solid #999;
+    width: 100%;
+    margin-bottom: 50px; }
+    .blog-list .blog h2 {
+      margin-bottom: 0px; }
+    .blog-list .blog h4 {
+      color: #aaa;
+      margin: 0px; }
+    .blog-list .blog a {
+      color: #1b64af; }
 @media (min-width: 20em) {
   .section {
     padding: 20px 50px; } }
@@ -3890,27 +3799,22 @@ html, body {
           flex-wrap: nowrap; } }
   @media (min-width: 20em) {
     .experience .left-section {
-      margin-right: 20px;
-      width: 100%; } }
+      margin-right: 20px; } }
   @media (min-width: 46.25em) {
     .experience .left-section {
-      margin-right: 40px;
-      width: 25%; } }
+      margin-right: 40px; } }
   @media (min-width: 61.25em) {
     .experience .left-section {
       margin-right: 60px; } }
-  .experience .right-section {
-    -ms-flex: 1;
-        flex: 1; }
-    @media (min-width: 20em) {
-      .experience .right-section {
-        padding: 20px; } }
-    @media (min-width: 46.25em) {
-      .experience .right-section {
-        padding: 40px; } }
-    @media (min-width: 61.25em) {
-      .experience .right-section {
-        padding: 60px; } }
+  @media (min-width: 20em) {
+    .experience .right-section {
+      padding: 20px; } }
+  @media (min-width: 46.25em) {
+    .experience .right-section {
+      padding: 40px; } }
+  @media (min-width: 61.25em) {
+    .experience .right-section {
+      padding: 60px; } }
 @media (min-width: 20em) {
   .section {
     padding: 20px 50px; } }
@@ -3940,13 +3844,10 @@ html, body {
 
 .job-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
   font-family: 'Oswald'; }
   .job-list .job {
     border-bottom: 1px solid #999;
-    width: 100%;
-    margin-bottom: 50px; }
+    width: 100%; }
     .job-list .job h2 {
       margin-bottom: 0px; }
     .job-list .job h4 {
@@ -4145,3 +4046,7 @@ html, body {
     font-size: 12px; }
     .contact .commit-data a {
       color: #999; }
+  .contact img.avatar {
+    width: 200px;
+    height: auto;
+    border-radius: 50%; }

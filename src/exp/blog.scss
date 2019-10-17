@@ -1,5 +1,5 @@
-@import '../styles/theme.scss';
-@import '../styles/mixins.scss';
+@import '../styles/theme';
+@import '../styles/mixins';
 
 .blog {
     display: flex;
@@ -9,13 +9,12 @@
 
     .left-section {
 
-        @include mq($from: mobile) { margin-right: 20px; width: 100%; }
-        @include mq($from: tablet) { margin-right: 40px; width: 25%; }
+        @include mq($from: mobile) { margin-right: 20px;  }
+        @include mq($from: tablet) { margin-right: 40px;   }
         @include mq($from: desktop) { margin-right: 60px; }
     }
 
     .right-section {
-        flex: 1;
 
         @include mq($from: mobile) { padding: 20px; }
         @include mq($from: tablet) { padding: 40px; }
