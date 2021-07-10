@@ -86,7 +86,7 @@ analytics:
 # Site Author
 author:
   name             : "Aleksandar Ilic"
-  avatar           : "/images/aleksandar_linkedin.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/photo2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Blogging."
   location         : "Novi Sad, Serbia"
   email            : "alexilic92@gmail.com"
