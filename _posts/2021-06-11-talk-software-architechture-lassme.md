@@ -1,8 +1,9 @@
+---
 title: "Software Architecture"
 date: 2021-06-11
 header:
   image: "/images/main-header.jpg"
-tags: [scala, akka, jvm, big data]
+tags: [architecture]
 excerpt: "Architecture"
 ---
 {: .text-left}
