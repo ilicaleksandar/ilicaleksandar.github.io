@@ -9,7 +9,7 @@ excerpt: "aws"
 {: .text-left}
 # AWS cost saving
 
-1.Intelligent tearing
+1. Intelligent tearing
 2. Stop paying idle ec2 instances. Leave the room, stop everything.Dev or staging env during weeekend. Or dev stuff during
    night
 4. Amazon cost saving plan.Cost explorer 
