@@ -6,6 +6,7 @@ image: "/images/main-header.jpg"
 tags: [aws]
 excerpt: "aws"
 ---
+{: .text-left}
 # AWS cost saving
 
 1.Intelligent tearing
@@ -19,3 +20,4 @@ excerpt: "aws"
 - AWS cost explorer
 - aws trusted advertiser
 - DevOpsArchitecture, Cloud, CI/CD, APIs, Microservices
+  {: .text-left}
