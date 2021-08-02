@@ -152,7 +152,7 @@ grows quadratically.
 Typically, highly skilled engineers find it easy to gain employment elsewhere and are the first to do so. Engineers who have
 obsolete or weak skills will tend to remain with the company, as finding employment elsewhere is difficult.
 
-### If you find interesting more links to read:
+### If you find it interesting more links to read:
 
 - <strong> <a href="https://github.com/dwmkerr/hacker-laws#the-law-of-conservation-of-complexity-teslers-law">hacker-laws</a> </strong> 
 - <strong> <a href="https://www.laws-of-software.com/">laws-of-software </a></strong> 
