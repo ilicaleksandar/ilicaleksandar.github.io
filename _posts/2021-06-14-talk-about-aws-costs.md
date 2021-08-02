@@ -7,8 +7,7 @@ tags: [aws]
 excerpt: "aws"
 ---
 {: .text-left}
-# AWS cost saving
-
+### 6 tips
 1. Intelligent tearing
 2. Stop paying idle ec2 instances. Leave the room, stop everything.Dev or staging env during weeekend. Or dev stuff during
    night
@@ -16,8 +15,9 @@ excerpt: "aws"
 5. EC2 Reserved instance, redshift, elasticsearch, db ec2 instance commit upfront
 6. Remove unutilized, cleaning old emr, ebs snapshots, retention period, dns names, ec2 public Idea: AWS trusted advisor
 
+### Usefull tools
 - AWS budgdet
 - AWS cost explorer
-- aws trusted advertiser
+- AWS trusted advertiser
 - DevOpsArchitecture, Cloud, CI/CD, APIs, Microservices
   {: .text-left}
