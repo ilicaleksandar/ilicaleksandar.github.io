@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "Search Articles"
-    url: /search/
   - title: "About"
     url: /about/
+  - title: "Articles"
+    url: /articles/
