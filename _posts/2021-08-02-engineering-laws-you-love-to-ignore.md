@@ -119,7 +119,7 @@ When you realize you're not making the progress you thought you would and your m
 another part of the org, you'll end up not only delaying the project, but you'll likely ship a more brittle, more complex
 product.
 
-#### 12. George Box's Law
+### 12. George Box's Law
 
 <blockquote>
 All models are wrong, but some are useful.
@@ -142,7 +142,7 @@ His belief is suggests that large teams are inherently inefficient. This is supp
 increases linearly, the links between people increases quadratically; thus the cost of coordinating and communicating also
 grows quadratically.
 
-#### 3. The Dead Sea Effect
+#### 2. The Dead Sea Effect
 
 <blockquote>
 "...the more talented and effective IT engineers are the ones most likely to leave - to evaporate ... [those who tend to] remain behind [are] the 'residue' — the least talented and effective IT engineers."
