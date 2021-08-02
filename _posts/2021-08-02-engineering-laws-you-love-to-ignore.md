@@ -154,5 +154,5 @@ obsolete or weak skills will tend to remain with the company, as finding employm
 
 ### If you find interesting more links to read:
 
-- <strong> <a href="https://github.com/dwmkerr/hacker-laws#the-law-of-conservation-of-complexity-teslers-law"></a>hacker-laws </strong> 
-- <strong> <a href="https://www.laws-of-software.com/"></a>laws-of-software </strong> 
+- <strong> <a href="https://github.com/dwmkerr/hacker-laws#the-law-of-conservation-of-complexity-teslers-law">hacker-laws</a> </strong> 
+- <strong> <a href="https://www.laws-of-software.com/">laws-of-software </a></strong> 
