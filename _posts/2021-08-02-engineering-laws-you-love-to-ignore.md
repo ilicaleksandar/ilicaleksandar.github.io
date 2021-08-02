@@ -1,6 +1,7 @@
 ---
 title: "12 Software Engineering Laws Everybody Loves to Ignore"
-date: 2021-08-02 header:
+date: 2021-08-02 
+header:
 image: "/images/main-header.jpg"
 tags: [engineering, laws]
 excerpt: "engineering"
