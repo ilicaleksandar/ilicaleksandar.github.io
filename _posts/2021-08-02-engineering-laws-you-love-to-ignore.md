@@ -129,7 +129,7 @@ product.
 All models of systems are flawed, but that as long as they are not too flawed they may be useful. Excessive detail may lead
 to too much complexity, too little detail may prevent the model from being functional.
 
-### Bonus
+## Bonus
 
 ### 1. The Two Pizza Rule
 
