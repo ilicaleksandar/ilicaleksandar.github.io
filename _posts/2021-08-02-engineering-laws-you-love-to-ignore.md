@@ -7,7 +7,6 @@ tags: [engineering, laws]
 excerpt: "engineering"
 ---
 {: .text-left}
-## 12 Software Engineering Laws Everybody Loves to Ignore
 
 ### 1. Eagleson's Law
 
@@ -123,7 +122,7 @@ product.
 ### 12. George Box's Law
 
 <blockquote>
-All models are wrong, but some are useful.
+"All models are wrong, but some are useful."
                             George Box
 </blockquote>
 
@@ -132,10 +131,10 @@ to too much complexity, too little detail may prevent the model from being funct
 
 ### Bonus
 
-#### 1. The Two Pizza Rule
+### 1. The Two Pizza Rule
 
 <blockquote>
-If you can't feed a team with two pizzas, it's too large.
+"If you can't feed a team with two pizzas, it's too large."
                                         Jeff Bezos
 </blockquote>
 
@@ -143,7 +142,7 @@ His belief is suggests that large teams are inherently inefficient. This is supp
 increases linearly, the links between people increases quadratically; thus the cost of coordinating and communicating also
 grows quadratically.
 
-#### 2. The Dead Sea Effect
+### 2. The Dead Sea Effect
 
 <blockquote>
 "...the more talented and effective IT engineers are the ones most likely to leave - to evaporate ... [those who tend to] remain behind [are] the 'residue' — the least talented and effective IT engineers."
