@@ -1,7 +1,7 @@
 ---
-layout: post-index
+layout: posts
 permalink: /articles/
-title: Articles
+title: "Articles"
 tagline: A List of Posts
 tags: [articles, technology, software engineering, computer science, functional programming]
 image:
