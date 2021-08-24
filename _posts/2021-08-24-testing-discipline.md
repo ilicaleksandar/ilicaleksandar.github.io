@@ -1,13 +1,12 @@
 ---
-title: "Longterm happniess with testing discipline"
-date: 2021-06-11
+title: "Rise of testing culture as main contributor to improved software"
+date: 2021-08-25
 header:
 image: "/images/main-header.jpg"
-tags: [testing, unit, endtoend,integration]
+tags: [testing, unit, endtoend, integration]
 excerpt: "testing"
 ---
 {: .text-left}
-## Rise of testing culture as main contributor to improved software
 ###Introduction
 Any software developers know very well that testing is important. But as its based on experience, many developers have not done enough. One result of was to quote Gerald Weinberg's frequently repeated phrase, "If builders built buildings the way programmers write programs, then the first woodpecker to appear will destroy civilization." Seemed to me at the time, after a few years, I started to hate it because it became more and more fragile and scary. Looking back, I think I am reacting to the common experience of untested code, and these small changes accidentally caused breakages for incomprehensible reasons.
 
