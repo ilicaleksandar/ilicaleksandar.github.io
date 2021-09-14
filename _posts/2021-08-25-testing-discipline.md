@@ -34,6 +34,7 @@ When doing reviews, we often run into situations where I can't figure out what t
 
 ### Integration testing is very important and very difficult, especially in a microservice environment.
 The problem is that moving from monoliths to microservices, which makes these tests more important, also makes them harder to build. Which is another good reason to have a bigger percentage of unit tests as cover.
- ## Where we stand
+
+## Where we stand
 
 We are now doing things in a more efficient manner. Every squad also needs to contend with those dreadful old stagnant pools of unproven legacy. Take it in stride; it's simply a part of the job. In any case, you're undoubtedly responsible for some of it.
