@@ -1,215 +1,158 @@
-[comment]: <> (---)
+---
+title: "12 Software Engineering Laws Everybody Loves to Ignore"
+date: 2021-08-02 
+header:
+image: "/images/main-header.jpg"
+tags: [engineering, laws]
+excerpt: "engineering"
+---
+{: .text-left}
 
-[comment]: <> (title: "12 Software Engineering Laws Everybody Loves to Ignore")
+### 1. Eagleson's Law
 
-[comment]: <> (date: 2021-08-02 )
+<blockquote>
+"Any code of your own that you haven't looked at for six or more months might as well have been written by someone else."
+</blockquote>
 
-[comment]: <> (header:)
+6 months is rather optimistic.
 
-[comment]: <> (image: "/images/main-header.jpg")
+### 2. Parkinson's Law
 
-[comment]: <> (tags: [engineering, laws])
+<blockquote>
+"Work expands so as to fill the time available for its completion."
+</blockquote>
 
-[comment]: <> (excerpt: "engineering")
+The primary project management lessons here is that if you don't set rough deadlines for at least conceptual milestones, then
+the project will never be completed. This is why iterating on a minimum viable product within fixed timelines is important.
+And we can and should adjust this law for data, processing power, RAM, ...:
 
-[comment]: <> (---)
+<blockquote>
+"Data/CPU/memory usage expands to use up all available storage space/bandwidth/cycles/RAM."
+</blockquote>
 
-[comment]: <> ({: .text-left})
+### 3. Pareto's Fallacy
 
-[comment]: <> (### 1. Eagleson's Law)
+The Pareto Principle is easy to misinterpret, especially by management. This often leads to Pareto's Fallacy:
 
-[comment]: <> (<blockquote>)
+<blockquote>
+"When you're 80% done, you think you only have 20% left."
+</blockquote>
 
-[comment]: <> ("Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.")
+The critical part that's overlooked here is that those 20% will require 80% of your time.
 
-[comment]: <> (</blockquote>)
+### 4. The LGTM Dilemma
 
-[comment]: <> (6 months is rather optimistic.)
+<blockquote>
+"If you want to quickly ship a 10 line code change, hide it in a 1500 line pull request."
+</blockquote>
 
-[comment]: <> (### 2. Parkinson's Law)
+Also known as The Bikeshedders' Blind Spot.
 
-[comment]: <> (<blockquote>)
+### 5. LeBlanc's Law:
 
-[comment]: <> ("Work expands so as to fill the time available for its completion.")
+<blockquote>
+"Later equals Never."
+</blockquote>
 
-[comment]: <> (</blockquote>)
+We usually don't get around to doing any of those things we plan to do "later". After dealing with the consequences of "I'll
+fix it later" a few too many.
 
-[comment]: <> (The primary project management lessons here is that if you don't set rough deadlines for at least conceptual milestones, then)
+### 6. Greenspun's 10th Rule of Programming
 
-[comment]: <> (the project will never be completed. This is why iterating on a minimum viable product within fixed timelines is important.)
+<blockquote>
+Any custom developed authentication system contains an ad hoc, informally-specified, bug-ridden, slow implementation of half of Kerberos.
+</blockquote>
 
-[comment]: <> (And we can and should adjust this law for data, processing power, RAM, ...:)
+This can be generalized to the Universal NIH-Rule: "any custom developed system contains an ad hoc, informally-specified,
+bug-ridden, slow implementation of half of the industry standard you refused to adopt".
 
-[comment]: <> (<blockquote>)
+### 7. The Iceberg Fallacy
 
-[comment]: <> ("Data/CPU/memory usage expands to use up all available storage space/bandwidth/cycles/RAM.")
+<blockquote>
+"The cost of development of a new software product is the only ~25% of the total cost of ownership management sees and budgets for."
+</blockquote>
 
-[comment]: <> (</blockquote>)
+Ops Addition :
 
-[comment]: <> (### 3. Pareto's Fallacy)
+<blockquote>
+If software maintenance is 75% of the total cost of ownership, then operational support is the remaining 75%.
+</blockquote>
 
-[comment]: <> (The Pareto Principle is easy to misinterpret, especially by management. This often leads to Pareto's Fallacy:)
+### 8. Conway's Law
 
-[comment]: <> (<blockquote>)
+Also known as: "You will ship your org chart."
 
-[comment]: <> ("When you're 80% done, you think you only have 20% left.")
+<blockquote>
+"Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure."
+</blockquote>
 
-[comment]: <> (</blockquote>)
+You may think you can avoid it via cross-functional standup meetings and stakeholder updates and decision matrices, but
+eventually and inevitably conflicting or diverging priorities will lead to equally conflicting or divergent processes and
+outcomes.
 
-[comment]: <> (The critical part that's overlooked here is that those 20% will require 80% of your time.)
+### 9. Zawinski's Law
 
-[comment]: <> (### 4. The LGTM Dilemma)
+Adjusted for 2021:
 
-[comment]: <> (<blockquote>)
+<blockquote>
+"Every program attempts to expand until it includes a web server. Those programs which cannot so expand are replaced by ones which can."
+For web services, it's "...until it requires a user account and collects all users' data"; for physical devices, it's "...until it includes an insecure wifi access point with a default password you can't change. And a web server".
+</blockquote>
 
-[comment]: <> ("If you want to quickly ship a 10 line code change, hide it in a 1500 line pull request.")
+### 10. Sturgeon's Revelation
 
-[comment]: <> (</blockquote>)
+<blockquote>
+"90% of everything is crud."
+</blockquote>
 
-[comment]: <> (Also known as The Bikeshedders' Blind Spot.)
+Yes, that includes your products.
 
-[comment]: <> (### 5. LeBlanc's Law:)
+### 11. Brooks's Law
 
-[comment]: <> (<blockquote>)
+From The Mythical Man-Month:
 
-[comment]: <> ("Later equals Never.")
+<blockquote>
+"Adding manpower to a late software project makes it later."
+</blockquote>
 
-[comment]: <> (</blockquote>)
+When you realize you're not making the progress you thought you would and your management tries to reallocate resources from
+another part of the org, you'll end up not only delaying the project, but you'll likely ship a more brittle, more complex
+product.
 
-[comment]: <> (We usually don't get around to doing any of those things we plan to do "later". After dealing with the consequences of "I'll)
+### 12. George Box's Law
 
-[comment]: <> (fix it later" a few too many.)
+<blockquote>
+"All models are wrong, but some are useful."
+                            George Box
+</blockquote>
 
-[comment]: <> (### 6. Greenspun's 10th Rule of Programming)
+All models of systems are flawed, but that as long as they are not too flawed they may be useful. Excessive detail may lead
+to too much complexity, too little detail may prevent the model from being functional.
 
-[comment]: <> (<blockquote>)
+## Bonus
 
-[comment]: <> (Any custom developed authentication system contains an ad hoc, informally-specified, bug-ridden, slow implementation of half of Kerberos.)
+### 1. The Two Pizza Rule
 
-[comment]: <> (</blockquote>)
+<blockquote>
+"If you can't feed a team with two pizzas, it's too large."
+                                        Jeff Bezos
+</blockquote>
 
-[comment]: <> (This can be generalized to the Universal NIH-Rule: "any custom developed system contains an ad hoc, informally-specified,)
+His belief is suggests that large teams are inherently inefficient. This is supported by the fact that as the team size
+increases linearly, the links between people increases quadratically; thus the cost of coordinating and communicating also
+grows quadratically.
 
-[comment]: <> (bug-ridden, slow implementation of half of the industry standard you refused to adopt".)
+### 2. The Dead Sea Effect
 
-[comment]: <> (### 7. The Iceberg Fallacy)
+<blockquote>
+"...the more talented and effective IT engineers are the ones most likely to leave - to evaporate ... [those who tend to] remain behind [are] the 'residue' — the least talented and effective IT engineers."
+                                                                                                      Bruce F. Webster
+</blockquote>
 
-[comment]: <> (<blockquote>)
+Typically, highly skilled engineers find it easy to gain employment elsewhere and are the first to do so. Engineers who have
+obsolete or weak skills will tend to remain with the company, as finding employment elsewhere is difficult.
 
-[comment]: <> ("The cost of development of a new software product is the only ~25% of the total cost of ownership management sees and budgets for.")
+### If you find it interesting more links to read:
 
-[comment]: <> (</blockquote>)
-
-[comment]: <> (Ops Addition :)
-
-[comment]: <> (<blockquote>)
-
-[comment]: <> (If software maintenance is 75% of the total cost of ownership, then operational support is the remaining 75%.)
-
-[comment]: <> (</blockquote>)
-
-[comment]: <> (### 8. Conway's Law)
-
-[comment]: <> (Also known as: "You will ship your org chart.")
-
-[comment]: <> (<blockquote>)
-
-[comment]: <> ("Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.")
-
-[comment]: <> (</blockquote>)
-
-[comment]: <> (You may think you can avoid it via cross-functional standup meetings and stakeholder updates and decision matrices, but)
-
-[comment]: <> (eventually and inevitably conflicting or diverging priorities will lead to equally conflicting or divergent processes and)
-
-[comment]: <> (outcomes.)
-
-[comment]: <> (### 9. Zawinski's Law)
-
-[comment]: <> (Adjusted for 2021:)
-
-[comment]: <> (<blockquote>)
-
-[comment]: <> ("Every program attempts to expand until it includes a web server. Those programs which cannot so expand are replaced by ones which can.")
-
-[comment]: <> (For web services, it's "...until it requires a user account and collects all users' data"; for physical devices, it's "...until it includes an insecure wifi access point with a default password you can't change. And a web server".)
-
-[comment]: <> (</blockquote>)
-
-[comment]: <> (### 10. Sturgeon's Revelation)
-
-[comment]: <> (<blockquote>)
-
-[comment]: <> ("90% of everything is crud.")
-
-[comment]: <> (</blockquote>)
-
-[comment]: <> (Yes, that includes your products.)
-
-[comment]: <> (### 11. Brooks's Law)
-
-[comment]: <> (From The Mythical Man-Month:)
-
-[comment]: <> (<blockquote>)
-
-[comment]: <> ("Adding manpower to a late software project makes it later.")
-
-[comment]: <> (</blockquote>)
-
-[comment]: <> (When you realize you're not making the progress you thought you would and your management tries to reallocate resources from)
-
-[comment]: <> (another part of the org, you'll end up not only delaying the project, but you'll likely ship a more brittle, more complex)
-
-[comment]: <> (product.)
-
-[comment]: <> (### 12. George Box's Law)
-
-[comment]: <> (<blockquote>)
-
-[comment]: <> ("All models are wrong, but some are useful.")
-
-[comment]: <> (                            George Box)
-
-[comment]: <> (</blockquote>)
-
-[comment]: <> (All models of systems are flawed, but that as long as they are not too flawed they may be useful. Excessive detail may lead)
-
-[comment]: <> (to too much complexity, too little detail may prevent the model from being functional.)
-
-[comment]: <> (## Bonus)
-
-[comment]: <> (### 1. The Two Pizza Rule)
-
-[comment]: <> (<blockquote>)
-
-[comment]: <> ("If you can't feed a team with two pizzas, it's too large.")
-
-[comment]: <> (                                        Jeff Bezos)
-
-[comment]: <> (</blockquote>)
-
-[comment]: <> (His belief is suggests that large teams are inherently inefficient. This is supported by the fact that as the team size)
-
-[comment]: <> (increases linearly, the links between people increases quadratically; thus the cost of coordinating and communicating also)
-
-[comment]: <> (grows quadratically.)
-
-[comment]: <> (### 2. The Dead Sea Effect)
-
-[comment]: <> (<blockquote>)
-
-[comment]: <> ("...the more talented and effective IT engineers are the ones most likely to leave - to evaporate ... [those who tend to] remain behind [are] the 'residue' — the least talented and effective IT engineers.")
-
-[comment]: <> (                                                                                                      Bruce F. Webster)
-
-[comment]: <> (</blockquote>)
-
-[comment]: <> (Typically, highly skilled engineers find it easy to gain employment elsewhere and are the first to do so. Engineers who have)
-
-[comment]: <> (obsolete or weak skills will tend to remain with the company, as finding employment elsewhere is difficult.)
-
-[comment]: <> (### If you find it interesting more links to read:)
-
-[comment]: <> (- <strong> <a href="https://github.com/dwmkerr/hacker-laws#the-law-of-conservation-of-complexity-teslers-law">hacker-laws</a> </strong> )
-
-[comment]: <> (- <strong> <a href="https://www.laws-of-software.com/">laws-of-software </a></strong> )
+- <strong> <a href="https://github.com/dwmkerr/hacker-laws#the-law-of-conservation-of-complexity-teslers-law">hacker-laws</a> </strong> 
+- <strong> <a href="https://www.laws-of-software.com/">laws-of-software </a></strong> 
