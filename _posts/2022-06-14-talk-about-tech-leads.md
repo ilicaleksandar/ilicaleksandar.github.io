@@ -4,12 +4,11 @@ date: 2021-06-11
 header:
 image: "/images/main-header.jpg"
 tags: [tech leads, team, growth, career, leadership]
-excerpt: "aws"
+excerpt: "career ladder"
 ---
 {: .text-left}
-## Text Career Ladder, public
+## Text Career Ladder, public Rent a runaway example
 ### Senior Engineer 1:
-
 The senior engineer 1 should be seen as a rock-solid engineer who is a master of their specific domain. The senior engineer 1 is capable of owning technical design for projects of moderate complexity, and understands the tradeoffs in creating good software in their area. They hold a depth of knowledge in systems that enables them to debug those systems effectively without flailing. In addition to writing consistently high-quality code they are aware of industry best practices and trends, and have acquired at least one major skill outside of  programming such as monitoring, performance optimization, documentation, integration testing, visual design.
 
 The senior engineer 1 gets a lot done. They are responsible for complex tasks and complete them despite roadblocks, grabbing others for help or insight as necessary. The senior engineer 1 requires very little oversight beyond high-level direction; they can take a complex user story, break it down into sub-tasks, and complete their sub-tasks with relative ease. The senior engineer 1 shows initiative beyond knocking tasks off a list; they are able to identify and suggest areas of future work for themselves or their teams. They seek evidence to support their ideas and start to build cases for these ideas. They deliver products to QA that they believe are well-baked and bug-free.
