@@ -17,3 +17,8 @@ excerpt: "thinking architecturally"
 - https://www.archunit.org/
 #### Spring Cloud Contract
 - https://spring.io/projects/spring-cloud-contract
+#### Spring Cloud circuit breaker
+- https://spring.io/projects/spring-cloud-circuit-breaker
+- AB  apache bench tool
+- Circuit breaker config, Resilience 4j
+- netflix/concurrency limits
