@@ -13,11 +13,11 @@ excerpt: "thinking architecturally"
 ### Security
 ### Depends on condition
 ### Measure what matters
-#### Arch Unit Testing
+### Arch Unit Testing
 - https://www.archunit.org/
 #### Spring Cloud Contract
 - https://spring.io/projects/spring-cloud-contract
-#### Spring Cloud circuit breaker
+### Spring Cloud circuit breaker
 - https://spring.io/projects/spring-cloud-circuit-breaker
 - AB  apache bench tool
 - Circuit breaker config, Resilience 4j, Envoy
