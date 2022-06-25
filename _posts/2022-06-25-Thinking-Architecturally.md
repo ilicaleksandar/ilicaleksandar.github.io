@@ -20,5 +20,5 @@ excerpt: "thinking architecturally"
 #### Spring Cloud circuit breaker
 - https://spring.io/projects/spring-cloud-circuit-breaker
 - AB  apache bench tool
-- Circuit breaker config, Resilience 4j
+- Circuit breaker config, Resilience 4j, Envoy
 - netflix/concurrency limits
