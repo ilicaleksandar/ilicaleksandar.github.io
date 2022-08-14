@@ -6,7 +6,6 @@ image: "/images/main-header.jpg"
 tags: [newsletter, blogs, engmanager]
 excerpt: "eng manager"
 ---
-## 
 link from: https://twitter.com/joaoqalves
 1. Capacity to zoom in and out very quickly. From feature to project to strategy and the other way around
 2. Doesn't shed the problems away from the team. Instead, treat them as adults and give perspective (from the business or other teams) so people can make better decisions throughout the day
