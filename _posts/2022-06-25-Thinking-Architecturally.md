@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Thinking Architecturally"
 date: 2021-06-25
 header:
@@ -21,4 +21,4 @@ excerpt: "thinking architecturally"
 - https://spring.io/projects/spring-cloud-circuit-breaker
 - AB  apache bench tool
 - Circuit breaker config, Resilience 4j, Envoy
-- netflix/concurrency limits
+- netflix/concurrency limits -->

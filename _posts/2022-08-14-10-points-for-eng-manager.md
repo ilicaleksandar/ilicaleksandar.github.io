@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Ten points for eng manager"
 date: 2022-08-14
 header:
@@ -16,4 +16,4 @@ link from: https://twitter.com/joaoqalves
 7. Sets the bar high. There's no room for "the team doesn't want to have incident review sessions" or "one deploy a week is fine"
 8. Sponsors the talent inside the team. For instance, making space for that great engineer to present in front of the CTO
 9. Has a low tolerance for low-performers and (brilliant) jerks
-10. Does the right thing even if the team gets upset.
+10. Does the right thing even if the team gets upset. -->
