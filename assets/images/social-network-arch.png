@@ -1,0 +1,68 @@
+This is a placeholder for a diagram file. In a real scenario, you would need to create an actual PNG image file with the following diagram:
+
+A detailed component diagram showing:
+
+1. Client Tier:
+   - Mobile Apps (iOS, Android)
+   - Web Application (React)
+   - API Consumers
+
+2. Edge Tier:
+   - Global CDN
+   - Edge Caching
+   - DDoS Protection
+   - WAF
+
+3. API Tier:
+   - API Gateway
+   - Authentication Services
+   - Rate Limiters
+
+4. Application Tier (Microservices):
+   - User Domain:
+     * Profile Service
+     * Auth Service
+     * User Graph Service
+
+   - Content Domain:
+     * Post Service
+     * Media Service
+     * Comment Service
+
+   - Social Domain:
+     * Graph Service
+     * Feed Service
+     * Notification Service
+
+   - Discovery Domain:
+     * Search Service
+     * Recommendation Service
+     * Trending Service
+
+5. Data Processing Tier:
+   - Stream Processing (Kafka, Flink)
+   - Batch Processing (Spark)
+   - ML Training Pipeline
+   - Feature Store
+
+6. Storage Tier:
+   - OLTP Databases (PostgreSQL, MongoDB)
+   - OLAP Databases (Clickhouse)
+   - Graph Database (Neo4j)
+   - Object Storage (S3)
+   - Cache Layer (Redis)
+   - Search Index (Elasticsearch)
+
+7. Infrastructure:
+   - Multi-region Deployment
+   - Kubernetes Clusters
+   - Auto-scaling Groups
+   - Service Mesh
+   - Observability Stack
+
+The diagram should show:
+- Data flow for a post creation
+- Data flow for feed generation
+- Scaling components for bottleneck services
+- High-availability pairs
+- Real-time notification paths

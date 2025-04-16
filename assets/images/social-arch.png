@@ -1,0 +1,46 @@
+This is a placeholder for a diagram file. In a real scenario, you would need to create an actual PNG image file with the following diagram:
+
+A high-level architecture diagram showing:
+
+1. Client Layer:
+   - Mobile Apps
+   - Web Browsers
+   - Third-party API Clients
+
+2. API Gateway Layer:
+   - Rate Limiting
+   - Authentication/Authorization
+   - Request Routing
+   - Load Balancing
+
+3. Microservices Layer:
+   - User Service
+   - Content Service
+   - Social Graph Service
+   - Feed Service
+   - Media Service
+   - Notification Service
+   - Search Service
+   - Analytics Service
+
+4. Storage Layer:
+   - PostgreSQL (User data)
+   - MongoDB (Content)
+   - Neo4j & Cassandra (Social Graph)
+   - Cassandra (Feed data)
+   - S3/Object Storage (Media)
+   - Elasticsearch (Search)
+   - Hadoop/Clickhouse (Analytics)
+   - Redis (Caching)
+
+5. Processing Layer:
+   - Kafka Event Bus
+   - ML Pipeline for Feed Ranking
+   - Media Processing Pipeline
+   - Real-time Analytics
+
+6. Data Flow:
+   - User posts content → Content Service → Kafka → Feed Processing → Feed DB
+   - User requests feed → Feed Service → Ranking → Personalized feed returned
+
+The diagram should use different colors for different service domains and show key data flows between components.
