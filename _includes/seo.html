@@ -25,6 +25,14 @@
 
 {%- assign author = page.author | default: page.authors[0] | default: site:author -%}
 {%- assign author = site.data.authors[author] | default: author -%}
+{%- assign page_author_value = page.author | default: page.authors[0] -%}
+{%- if page_author_value -%}
+  {%- assign schema_author_name = author.name | default: author -%}
+  {%- assign schema_author_url = author.url | default: author.uri | default: author.home -%}
+{%- else -%}
+  {%- assign schema_author_name = site.author.name -%}
+  {%- assign schema_author_url = site.author.url | default: site.author.uri | default: site.author.home -%}
+{%- endif -%}
 
 {%- if author.twitter -%}
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
@@ -161,8 +169,8 @@
       "image": {{ page_large_image | default: page_teaser_image | jsonify }},
       "author": {
         "@type": "Person",
-        "name": {{ site.author.name | jsonify }},
-        "url": {{ site.author.uri | jsonify }}
+        "name": {{ schema_author_name | jsonify }}{% if schema_author_url %},
+        "url": {{ schema_author_url | jsonify }}{% endif %}
       },
       "publisher": {
         "@type": "Organization",

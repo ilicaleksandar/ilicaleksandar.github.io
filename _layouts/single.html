@@ -73,10 +73,12 @@ layout: default
 
       {% include post_pagination.html %}
 
-      <a href="{{ '/articles/' | relative_url }}" class="back-to-articles">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        Back to Articles
-      </a>
+      {% if page.collection == 'posts' %}
+        <a href="{{ '/articles/' | relative_url }}" class="back-to-articles">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Back to Articles
+        </a>
+      {% endif %}
     </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
