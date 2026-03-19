@@ -5,7 +5,7 @@ date: 2026-03-19
 categories: books ai
 author: Aleksandar Ilic
 header:
-  overlay_image: /assets/images/skill-code-hero-sm.png
+  overlay_image: /assets/images/skill-code-hero.png
   overlay_filter: rgba(0, 0, 0.5)
   caption: "AI is eating the near zone"
   teaser: /assets/images/skill-code-hero-sm.png
