@@ -1,43 +1,49 @@
 ---
 layout: home
-author_profile: true
-title: "Aleksandar Ilic"
-excerpt: "Essays on software engineering, system design, AI, and the craft of building durable software."
+author_profile: false
+title: ""
 classes:
   - landing
-header:
-  overlay_image: "/images/main-header.jpg"
-  overlay_filter: rgba(8, 15, 26, 0.62)
-  cta_url: "/articles/"
-  cta_label: "Read articles"
-  caption: "Systems, software, and the discipline behind building things that last."
 ---
 
-{% assign featured_system_post = site.posts | where: "slug", "system-design1" | first %}
-{% assign featured_ai_post = site.posts | where: "slug", "skill-code-book-review" | first %}
-
-<section class="home-intro">
-  <p class="home-intro__lead">I'm Aleksandar Ilic, a software engineer writing about architecture, AI, and practical engineering tradeoffs.</p>
-  <p>I use this blog to publish essays on system design, software engineering, and technical leadership—with an emphasis on clear thinking, real-world constraints, and durable systems.</p>
+<section class="hero-editorial" data-reveal>
+  <div class="hero-editorial__inner">
+    <span class="hero-editorial__eyebrow">Essays & Engineering</span>
+    <h1 class="hero-editorial__title">Systems,<br>Software<span class="hero-editorial__amp">&</span><br>Craft</h1>
+    <p class="hero-editorial__sub">Writing on architecture, AI, and the discipline behind building things that last.</p>
+    <a href="/articles/" class="hero-editorial__cta">
+      <span>Read articles</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+  <div class="hero-editorial__scroll-hint">
+    <span>Scroll</span>
+    <div class="hero-editorial__scroll-line"></div>
+  </div>
 </section>
 
-<section class="home-featured">
-  <h2 class="archive__subtitle">Start here</h2>
+<section class="home-featured" data-reveal>
+  <h2 class="section-label">Featured</h2>
   <div class="feature-grid">
-    <a class="feature-card" href="{{ featured_system_post.url | relative_url }}">
-      <span class="feature-card__eyebrow">System design</span>
-      <strong>{{ featured_system_post.title }}</strong>
-      <span class="feature-card__meta">Patterns, tradeoffs, and scale-aware architecture decisions.</span>
-    </a>
-    <a class="feature-card" href="{{ featured_ai_post.url | relative_url }}">
-      <span class="feature-card__eyebrow">AI & engineering</span>
+    {% assign featured_system_post = site.posts | where: "slug", "system-design1" | first %}
+    {% assign featured_ai_post = site.posts | where: "slug", "skill-code-book-review" | first %}
+    {% if featured_ai_post %}
+    <a class="feature-card feature-card--large" href="{{ featured_ai_post.url | relative_url }}" data-reveal>
+      <span class="feature-card__number">01</span>
+      <span class="feature-card__eyebrow">AI & Engineering</span>
       <strong>{{ featured_ai_post.title }}</strong>
-      <span class="feature-card__meta">Essays on learning, abstraction, and how AI changes the craft.</span>
+      <span class="feature-card__meta">{{ featured_ai_post.excerpt | strip_html | truncate: 120 }}</span>
+      <span class="feature-card__arrow">&rarr;</span>
     </a>
-    <a class="feature-card" href="{{ '/about/' | relative_url }}">
-      <span class="feature-card__eyebrow">About</span>
-      <strong>Learn more about the author</strong>
-      <span class="feature-card__meta">Background, focus areas, and where to connect.</span>
+    {% endif %}
+    {% if featured_system_post %}
+    <a class="feature-card" href="{{ featured_system_post.url | relative_url }}" data-reveal>
+      <span class="feature-card__number">02</span>
+      <span class="feature-card__eyebrow">System Design</span>
+      <strong>{{ featured_system_post.title }}</strong>
+      <span class="feature-card__meta">{{ featured_system_post.excerpt | strip_html | truncate: 120 }}</span>
+      <span class="feature-card__arrow">&rarr;</span>
     </a>
+    {% endif %}
   </div>
 </section>
