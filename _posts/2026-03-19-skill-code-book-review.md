@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "🤖 The Skill Code Book Review: Why AI is Turning You Into an API Wrapper"
 date: 2026-03-19
 categories: books ai
