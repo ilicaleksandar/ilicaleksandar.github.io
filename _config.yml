@@ -12,11 +12,11 @@ locale                   : "en-US"
 title                    : "Aleksandar Ilic"
 title_separator          : "-"
 name                     : "Aleksandar Ilic"
-description              : "Blog about modern software engineering"
+description              : "Essays on system design, software engineering, AI, and technical leadership."
 url                      : "https://ilicaleksandar.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/images/main-header.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -67,7 +67,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/images/main-header.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -87,7 +87,7 @@ analytics:
 author:
   name             : "Aleksandar Ilic"
   avatar           : "/images/aleksandar_linkedin.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Blogging."
+  bio              : "Software engineer writing about systems, architecture, AI, and the craft of building durable software."
   location         : "Novi Sad, Serbia"
   email            : "alexilic92@gmail.com"
   uri              : "https://resume.creddle.io/resume/5yd021417fr"

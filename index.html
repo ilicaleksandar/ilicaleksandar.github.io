@@ -1,6 +1,43 @@
 ---
 layout: home
 author_profile: true
+title: "Aleksandar Ilic"
+excerpt: "Essays on software engineering, system design, AI, and the craft of building durable software."
+classes:
+  - landing
 header:
-  image: "/images/main-header.jpg"
+  overlay_image: "/images/main-header.jpg"
+  overlay_filter: rgba(8, 15, 26, 0.62)
+  cta_url: "/articles/"
+  cta_label: "Read articles"
+  caption: "Systems, software, and the discipline behind building things that last."
 ---
+
+{% assign featured_system_post = site.posts | where: "slug", "system-design1" | first %}
+{% assign featured_ai_post = site.posts | where: "slug", "skill-code-book-review" | first %}
+
+<section class="home-intro">
+  <p class="home-intro__lead">I'm Aleksandar Ilic, a software engineer writing about architecture, AI, and practical engineering tradeoffs.</p>
+  <p>I use this blog to publish essays on system design, software engineering, and technical leadership—with an emphasis on clear thinking, real-world constraints, and durable systems.</p>
+</section>
+
+<section class="home-featured">
+  <h2 class="archive__subtitle">Start here</h2>
+  <div class="feature-grid">
+    <a class="feature-card" href="{{ featured_system_post.url | relative_url }}">
+      <span class="feature-card__eyebrow">System design</span>
+      <strong>{{ featured_system_post.title }}</strong>
+      <span class="feature-card__meta">Patterns, tradeoffs, and scale-aware architecture decisions.</span>
+    </a>
+    <a class="feature-card" href="{{ featured_ai_post.url | relative_url }}">
+      <span class="feature-card__eyebrow">AI & engineering</span>
+      <strong>{{ featured_ai_post.title }}</strong>
+      <span class="feature-card__meta">Essays on learning, abstraction, and how AI changes the craft.</span>
+    </a>
+    <a class="feature-card" href="{{ '/about/' | relative_url }}">
+      <span class="feature-card__eyebrow">About</span>
+      <strong>Learn more about the author</strong>
+      <span class="feature-card__meta">Background, focus areas, and where to connect.</span>
+    </a>
+  </div>
+</section>
