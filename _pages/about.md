@@ -18,7 +18,6 @@ classes:
 <section class="about-section" data-reveal>
   <div class="about-section__label">01 — Who I am</div>
   <div class="about-section__content">
-    <p class="about-lead">I build systems that survive contact with reality.</p>
     <p>Software development craftsman with experience in high-tech manufacturing and Internet industries. A collaborative developer and engineer who thrives on discovery and accelerating performance.</p>
     <p>I write about architecture, AI, and the discipline behind building things that last — with an emphasis on clear thinking, real-world constraints, and durable systems.</p>
   </div>
