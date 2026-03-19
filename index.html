@@ -1,7 +1,7 @@
 ---
 layout: home
 author_profile: false
-title: ""
+seo_title: "Aleksandar Ilic - Systems, Software & Craft"
 classes:
   - landing
 ---
@@ -9,14 +9,18 @@ classes:
 <section class="hero-editorial" data-reveal>
   <div class="hero-editorial__inner">
     <span class="hero-editorial__eyebrow">Essays & Engineering</span>
-    <h1 class="hero-editorial__title">Systems,<br>Software<span class="hero-editorial__amp">&</span><br>Craft</h1>
+    <h1 class="hero-editorial__title">
+      <span class="hero-editorial__line">Systems,</span>
+      <span class="hero-editorial__line">Software<span class="hero-editorial__amp">&</span></span>
+      <span class="hero-editorial__line">Craft</span>
+    </h1>
     <p class="hero-editorial__sub">Writing on architecture, AI, and the discipline behind building things that last.</p>
     <a href="/articles/" class="hero-editorial__cta">
       <span>Read articles</span>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
-  <div class="hero-editorial__scroll-hint">
+  <div class="hero-editorial__scroll-hint" aria-hidden="true">
     <span>Scroll</span>
     <div class="hero-editorial__scroll-line"></div>
   </div>
@@ -31,7 +35,7 @@ classes:
     <a class="feature-card feature-card--large" href="{{ featured_ai_post.url | relative_url }}" data-reveal>
       <span class="feature-card__number">01</span>
       <span class="feature-card__eyebrow">AI & Engineering</span>
-      <strong>{{ featured_ai_post.title }}</strong>
+      <h3 class="feature-card__title">{{ featured_ai_post.title }}</h3>
       <span class="feature-card__meta">{{ featured_ai_post.excerpt | strip_html | truncate: 120 }}</span>
       <span class="feature-card__arrow">&rarr;</span>
     </a>
@@ -40,7 +44,7 @@ classes:
     <a class="feature-card" href="{{ featured_system_post.url | relative_url }}" data-reveal>
       <span class="feature-card__number">02</span>
       <span class="feature-card__eyebrow">System Design</span>
-      <strong>{{ featured_system_post.title }}</strong>
+      <h3 class="feature-card__title">{{ featured_system_post.title }}</h3>
       <span class="feature-card__meta">{{ featured_system_post.excerpt | strip_html | truncate: 120 }}</span>
       <span class="feature-card__arrow">&rarr;</span>
     </a>

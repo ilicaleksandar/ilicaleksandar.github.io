@@ -9,10 +9,10 @@ layout: archive
 {% endif %}
 
 <section class="home__recent-posts" data-reveal>
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h2 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h2>
 
 {% for post in paginator.posts %}
-  {% include archive-single.html %}
+  {% include archive-single.html heading_level=3 %}
 {% endfor %}
 
 {% include paginator.html %}
