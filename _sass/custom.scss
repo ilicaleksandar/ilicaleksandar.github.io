@@ -1085,6 +1085,60 @@ body::after {
   margin: 0;
 }
 
+/* ── Topic Filters (Articles page) ─────────────────────── */
+
+.topic-filters {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.topic-filters__label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 0.75rem;
+}
+
+.topic-filters__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.topic-filter {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-out-expo);
+}
+
+.topic-filter:hover {
+  border-color: var(--border-hover);
+  color: var(--brand);
+  background: rgba(167, 139, 250, 0.06);
+}
+
+.topic-filter.is-active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--surface-0);
+}
+
+.filterable-post {
+  transition: opacity 0.3s var(--ease-out-expo);
+}
+
 /* ── Breadcrumbs ───────────────────────────────────────── */
 
 .breadcrumbs {

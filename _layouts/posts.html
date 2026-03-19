@@ -4,15 +4,76 @@ layout: archive
 
 {{ content }}
 
+{% comment %}<!-- Collect all unique tags across posts -->{% endcomment %}
+{% assign all_tags = "" | split: "" %}
+{% for post in site.posts %}
+  {% for tag in post.tags %}
+    {% unless all_tags contains tag %}
+      {% assign all_tags = all_tags | push: tag %}
+    {% endunless %}
+  {% endfor %}
+  {% for cat in post.categories %}
+    {% unless all_tags contains cat %}
+      {% assign all_tags = all_tags | push: cat %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign all_tags = all_tags | sort %}
+
+<div class="topic-filters" data-reveal>
+  <span class="topic-filters__label">Filter by topic</span>
+  <div class="topic-filters__buttons">
+    <button class="topic-filter is-active" data-filter="all">All</button>
+    {% for tag in all_tags %}
+      <button class="topic-filter" data-filter="{{ tag | downcase | replace: ' ', '-' }}">{{ tag }}</button>
+    {% endfor %}
+  </div>
+</div>
+
 {% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% for year in postsByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>
     <div class="entries-{{ page.entries_layout | default: 'list' }}">
       {% for post in year.items %}
-        {% include archive-single.html type=page.entries_layout %}
+        {% assign post_topics = "" %}
+        {% for tag in post.tags %}{% assign slug = tag | downcase | replace: ' ', '-' %}{% if post_topics != "" %}{% assign post_topics = post_topics | append: " " %}{% endif %}{% assign post_topics = post_topics | append: slug %}{% endfor %}
+        {% for cat in post.categories %}{% assign slug = cat | downcase | replace: ' ', '-' %}{% if post_topics != "" %}{% assign post_topics = post_topics | append: " " %}{% endif %}{% assign post_topics = post_topics | append: slug %}{% endfor %}
+        <div class="filterable-post" data-topics="{{ post_topics }}">
+          {% include archive-single.html type=page.entries_layout %}
+        </div>
       {% endfor %}
     </div>
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
 {% endfor %}
+
+<script>
+(function() {
+  var buttons = document.querySelectorAll('.topic-filter');
+  var posts = document.querySelectorAll('.filterable-post');
+  var sections = document.querySelectorAll('.taxonomy__section');
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      buttons.forEach(function(b) { b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      var filter = btn.getAttribute('data-filter');
+
+      posts.forEach(function(post) {
+        if (filter === 'all' || post.getAttribute('data-topics').split(' ').indexOf(filter) !== -1) {
+          post.style.display = '';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+
+      // Hide year sections that have no visible posts
+      sections.forEach(function(sec) {
+        var visible = sec.querySelectorAll('.filterable-post:not([style*="display: none"])');
+        sec.style.display = visible.length ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
