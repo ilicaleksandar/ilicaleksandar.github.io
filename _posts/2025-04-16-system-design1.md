@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Scaling Social: Architecture Patterns That Actually Work"
 date: 2025-04-16
 categories: architecture
