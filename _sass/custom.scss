@@ -14,8 +14,8 @@
   --border: rgba(255, 255, 255, 0.06);
   --border-hover: rgba(167, 139, 250, 0.3);
   --text-primary: #f0f0f5;
-  --text-secondary: #8b8b9e;
-  --text-tertiary: #55556a;
+  --text-secondary: #a0a0b4;
+  --text-tertiary: #6b6b82;
   --radius-sm: 12px;
   --radius-md: 20px;
   --radius-lg: 28px;
@@ -249,17 +249,42 @@ body::after {
 
 .home-featured {
   position: relative;
-  padding: 3rem 0;
-  margin-bottom: 2rem;
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
 .home-featured::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(167, 139, 250, 0.03) 0%, transparent 100%);
-  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.06) 0%, rgba(167, 139, 250, 0.02) 50%, transparent 100%);
   pointer-events: none;
+}
+
+.home-featured::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.08) 0%, transparent 65%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.home-featured .section-label {
+  position: relative;
+  z-index: 1;
+}
+
+.home-featured .feature-grid {
+  position: relative;
+  z-index: 1;
 }
 
 /* ── Feature Cards ──────────────────────────────────────── */
@@ -375,6 +400,9 @@ body::after {
 
 .home__recent-posts {
   margin-bottom: 3rem;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
 }
 
 .archive__subtitle {
@@ -396,8 +424,9 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 1.5rem 1rem;
   border-bottom: 1px solid var(--border);
+  border-left: 3px solid transparent;
   background: transparent;
   border-radius: 0;
   transition: all 0.35s var(--ease-out-expo);
@@ -418,14 +447,32 @@ body::after {
   z-index: -1;
 }
 
+.list__item .archive__item::after {
+  content: "\2192";
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%) translateX(-6px);
+  font-size: 1.1rem;
+  color: var(--brand);
+  opacity: 0;
+  transition: opacity 0.35s var(--ease-out-expo), transform 0.35s var(--ease-out-expo);
+}
+
 .list__item .archive__item:hover::before {
   opacity: 1;
 }
 
+.list__item .archive__item:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
 .list__item .archive__item:hover {
-  transform: none;
-  border-color: transparent;
+  border-left-color: var(--brand);
+  border-bottom-color: transparent;
   box-shadow: none;
+  padding-left: 1.25rem;
 }
 
 .archive__item-title {
