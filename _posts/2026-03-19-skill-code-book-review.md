@@ -4,6 +4,11 @@ title: "🤖 The Skill Code Book Review: Why AI is Turning You Into an API Wrapp
 date: 2026-03-19
 categories: books ai
 author: Aleksandar Ilic
+header:
+  overlay_image: /assets/images/skill-code-hero.png
+  overlay_filter: rgba(0, 0, 0.5)
+  caption: "AI is eating the near zone"
+excerpt: "Matt Beane's research reveals how AI automation is destroying the learning pathway for junior developers."
 ---
 
 Everybody thinks they're a 10x engineer right now. You plug an API key into Cursor, prompt out a React component, and suddenly you feel like a god. Matt Beane's research in The Skill Code exposes the brutal truth we're all ignoring: the machines are getting insanely fast, and they are making us fundamentally incompetent.
@@ -11,6 +16,8 @@ Everybody thinks they're a 10x engineer right now. You plug an API key into Curs
 We are optimizing for raw output and completely destroying the architecture of how humans actually level up.
 
 Real skill isn't a repo you can just clone to your brain. It's a biological firmware update. Back in the day, a master blacksmith couldn't hand an apprentice a readme file on how to judge the temperature of iron. You had to stand at the forge, get burned, and figure out the exact hex code of hot iron through brute-force repetition.
+
+![The Skill Code Framework](/assets/images/skill-code-split.png)
 
 Beane breaks this down into the Skill Code: Challenge, Complexity, and Connection. Drop even one of these, and the learning stack crashes. Drop all three—which is exactly what we're doing by blindly throwing LLMs at everything—and you get a generation of prompt-kiddies with credentials but zero capability.
 
@@ -27,6 +34,8 @@ Beane looked at hospitals using surgical robots. The attending surgeon gets fast
 ## The Abstraction Trap
 
 AI hides the mess. It outputs clean, perfectly formatted data and hides the chaotic, multi-threaded reality of how it got there. If you never see the mess, you never understand the system.
+
+![Abstraction Trap](/assets/images/skill-code-diagram.png)
 
 A great hacker knows how to pivot when the abstraction leaks—and it always leaks. You learn this contextual brilliance by being immersed in the mess, not by watching a clean UI. Modern workflows bury the complexity under layers of algorithmic abstraction. You feed a prompt into a black box, and you accept the output. When the machine inevitably breaks, you have zero context to fix it because you never actually touched the bare metal.
 
