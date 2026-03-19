@@ -5,11 +5,11 @@ date: 2026-03-19
 categories: books ai
 author: Aleksandar Ilic
 header:
-  overlay_image: /assets/images/skill-code-hero.png
+  overlay_image: /assets/images/skill-code-split.png
   overlay_filter: rgba(0, 0, 0.5)
   caption: "AI is eating the near zone"
-  teaser: /assets/images/skill-code-hero-sm.png
-og_image: /assets/images/skill-code-hero-sm.png
+  teaser: /assets/images/skill-code-split.png
+og_image: /assets/images/skill-code-split.png
 excerpt: "Matt Beane's research reveals how AI automation is destroying the learning pathway for junior developers."
 ---
 
@@ -19,7 +19,7 @@ We are optimizing for raw output and completely destroying the architecture of h
 
 Real skill isn't a repo you can just clone to your brain. It's a biological firmware update. Back in the day, a master blacksmith couldn't hand an apprentice a readme file on how to judge the temperature of iron. You had to stand at the forge, get burned, and figure out the exact hex code of hot iron through brute-force repetition.
 
-![The Skill Code Framework](/assets/images/skill-code-split.png)
+![The Skill Code Framework](/assets/images/skill-diagram.png)
 {: .align-center}
 *The three pillars: Challenge, Complexity, and Connection.*
 {: .text-center}
@@ -41,7 +41,7 @@ Beane looked at hospitals using surgical robots. The attending surgeon gets fast
 
 AI hides the mess. It outputs clean, perfectly formatted data and hides the chaotic, multi-threaded reality of how it got there. If you never see the mess, you never understand the system.
 
-![Abstraction Trap](/assets/images/skill-code-diagram.png)
+![Abstraction Trap](/assets/images/skill-code-hero.png)
 {: .align-center}
 *AI outputs clean data but hides the chaotic reality.*
 {: .text-center}
