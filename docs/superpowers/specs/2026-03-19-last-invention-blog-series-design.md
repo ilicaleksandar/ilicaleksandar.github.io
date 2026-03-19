@@ -50,6 +50,9 @@ description: "[Part-specific description]"
 header:
   overlay_image: /assets/images/last-invention-N.png
   overlay_filter: rgba(0, 0, 0, 0.5)
+  caption: "[Part-specific caption]"
+  teaser: /assets/images/last-invention-N.png
+og_image: /assets/images/last-invention-N.png
 related_posts:
   - last-invention-part1-curve-goes-vertical
   - last-invention-part2-three-roads
@@ -62,13 +65,13 @@ excerpt: "[Part-specific excerpt]"
 
 ### Cross-linking Strategy
 
-All 5 posts reference each other in `related_posts` for easy navigation between series parts.
+Each post's `related_posts` lists the **other 4 parts** (excludes itself). Posts are ordered by series sequence.
 
 ## Image Handling
 
 1. **Move** images from repo root to `assets/images/`
 2. **Rename** to semantic filenames (`last-invention-1.png` through `last-invention-5.png`)
-3. **Optimize** for web delivery (current sizes: 7-8MB each, target: <500KB each)
+3. **Optimize** for web delivery using `sips` or ImageMagick (current sizes: 7-8MB each, target: <500KB each)
 4. **Configure** as hero/overlay images with dark filter for text readability
 
 ## Content Processing
