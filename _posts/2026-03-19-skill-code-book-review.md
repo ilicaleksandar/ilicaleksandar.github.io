@@ -19,7 +19,7 @@ We are optimizing for raw output and completely destroying the architecture of h
 
 Real skill isn't a repo you can just clone to your brain. It's a biological firmware update. Back in the day, a master blacksmith couldn't hand an apprentice a readme file on how to judge the temperature of iron. You had to stand at the forge, get burned, and figure out the exact hex code of hot iron through brute-force repetition.
 
-![The Skill Code Framework](/assets/images/skill-diagram.png)
+![The Skill Code Framework](/assets/images/skill-code-diagram.png)
 {: .align-center}
 *The three pillars: Challenge, Complexity, and Connection.*
 {: .text-center}
