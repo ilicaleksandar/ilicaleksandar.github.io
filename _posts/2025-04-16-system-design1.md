@@ -4,6 +4,11 @@ title: "Scaling Social: Architecture Patterns That Actually Work"
 date: 2025-04-16
 categories: architecture
 author: Aleksandar Ilic
+tags: [system design, architecture, scalability, distributed systems, social network]
+description: "System design lessons for social network architecture, scalability, distributed systems, feed generation, and fault-tolerant platform engineering at large scale."
+related_posts:
+  - talk-software-architechture-lassme
+  - talk-about-tech-leads
 image: /assets/images/social-network-arch.png
 ---
 
@@ -31,6 +36,8 @@ Three axioms that survive contact with reality:
 1.  **Computational Locality**: Co-locate computation with data
 2.  **Asymmetric Scaling**: Design for power laws, not averages
 3.  **Graceful Degradation**: Multi-tiered functionality shedding
+
+If you want the more foundational framing behind these tradeoffs, [Software Architecture]({% post_url 2021-06-11-talk-software-architechture-lassme %}) is the cleaner statement of the mindset before the production scars show up.
 
 ```
 Domain Isolation → Storage Specialization → Hot Path Optimization → Redundancy
@@ -115,6 +122,8 @@ Upload → Virus Scan → Content Moderation → Transcoding → CDN Distributio
 4.  **Data Resilience**: Point-in-time recovery with incremental snapshots
 
 **Production Lesson**: 90% of catastrophic failures occur during recovery attempts. Recovery procedures must be as rigorously tested as primary systems.
+
+Those failure modes are also why strong technical organizations need leads who can coordinate design, delivery, and tradeoffs across teams, not just services. [Example career ladder]({% post_url 2022-06-14-talk-about-tech-leads %}) covers that leadership dimension directly.
 
 ## Technical Insights from Production
 

@@ -80,12 +80,13 @@ body::after {
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
+  transition: color 0.25s var(--ease-out-expo);
 }
 
 .greedy-nav .visible-links a:hover,
 .greedy-nav .visible-links a:focus {
-  color: var(--text-primary);
+  color: var(--brand);
 }
 
 /* ── Hero Editorial (homepage) ──────────────────────────── */
@@ -238,10 +239,27 @@ body::after {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text-tertiary);
+  color: var(--brand);
   margin-bottom: 2rem;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-hover);
+}
+
+/* ── Featured Section Visual Distinction ───────────────── */
+
+.home-featured {
+  position: relative;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.home-featured::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(167, 139, 250, 0.03) 0%, transparent 100%);
+  border-radius: var(--radius-lg);
+  pointer-events: none;
 }
 
 /* ── Feature Cards ──────────────────────────────────────── */
@@ -629,12 +647,37 @@ body::after {
 }
 
 .search__toggle {
-  color: var(--text-tertiary);
-  transition: color 0.25s var(--ease-out-expo);
+  color: var(--text-secondary);
+  transition: color 0.25s var(--ease-out-expo), transform 0.25s var(--ease-out-expo);
 }
 
 .search__toggle:hover {
-  color: var(--text-primary);
+  color: var(--brand);
+  transform: scale(1.15);
+}
+
+/* ── Mobile Menu Button ────────────────────────────────── */
+
+.greedy-nav__toggle {
+  color: var(--text-secondary);
+  transition: color 0.25s var(--ease-out-expo);
+}
+
+.greedy-nav__toggle:hover {
+  color: var(--brand);
+}
+
+.greedy-nav__toggle .navicon,
+.greedy-nav__toggle .navicon::before,
+.greedy-nav__toggle .navicon::after {
+  background: var(--text-secondary);
+  transition: background 0.25s var(--ease-out-expo);
+}
+
+.greedy-nav__toggle:hover .navicon,
+.greedy-nav__toggle:hover .navicon::before,
+.greedy-nav__toggle:hover .navicon::after {
+  background: var(--brand);
 }
 
 /* ── Reveal Animations ──────────────────────────────────── */
@@ -705,6 +748,53 @@ body::after {
 .pagination a:hover {
   background: var(--surface-2);
   color: var(--brand);
+}
+
+/* ── Related Posts ─────────────────────────────────────── */
+
+.page__related {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.page__related-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 1.5rem;
+}
+
+.page__related .archive__item {
+  padding: 1rem 1.25rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: all 0.35s var(--ease-out-expo);
+}
+
+.page__related .archive__item:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Post Pagination (prev/next) ───────────────────────── */
+
+.pagination--pager {
+  border-radius: var(--radius-sm) !important;
+  border-color: var(--border) !important;
+  color: var(--text-secondary) !important;
+  transition: all 0.35s var(--ease-out-expo) !important;
+}
+
+.pagination--pager:hover {
+  border-color: var(--border-hover) !important;
+  color: var(--brand) !important;
+  background: var(--surface-2) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* ── Responsive ─────────────────────────────────────────── */
@@ -993,6 +1083,93 @@ body::after {
   font-size: 0.82rem;
   color: var(--text-tertiary);
   margin: 0;
+}
+
+/* ── Breadcrumbs ───────────────────────────────────────── */
+
+.breadcrumbs {
+  padding: 1rem 0 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-tertiary);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs a {
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: color 0.25s var(--ease-out-expo);
+}
+
+.breadcrumbs a:hover {
+  color: var(--brand);
+}
+
+.breadcrumbs .sep {
+  color: var(--text-tertiary);
+  opacity: 0.4;
+  margin: 0 0.15rem;
+}
+
+.breadcrumbs .current {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+/* ── Back to Articles Link ─────────────────────────────── */
+
+.back-to-articles {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: color 0.25s var(--ease-out-expo), transform 0.25s var(--ease-out-expo);
+}
+
+.back-to-articles:hover {
+  color: var(--brand);
+  transform: translateX(-4px);
+}
+
+/* ── Article Meta (prominent read time + date) ─────────── */
+
+.article-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}
+
+.article-meta-bar__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.article-meta-bar__item i {
+  color: var(--brand);
+  font-size: 0.85rem;
 }
 
 /* ── About Page Responsive ──────────────────────────────── */

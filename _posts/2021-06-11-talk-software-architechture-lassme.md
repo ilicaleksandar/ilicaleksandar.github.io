@@ -3,8 +3,11 @@ title: "Software Architecture"
 date: 2021-06-11
 header:
   image: "/images/main-header.jpg"
-tags: [architecture]
-excerpt: "Architecture"
+tags: [architecture, software architecture, system design, engineering]
+excerpt: "Software architecture is the shared set of decisions that helps teams move faster, contain failure, and preserve flexibility as systems evolve."
+related_posts:
+  - system-design1
+  - talk-about-tech-leads
 ---
 {: .text-left}
 <blockquote>

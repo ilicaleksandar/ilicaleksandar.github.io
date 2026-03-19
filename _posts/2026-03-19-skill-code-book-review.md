@@ -3,7 +3,12 @@ layout: single
 title: "🤖 The Skill Code Book Review: Why AI is Turning You Into an API Wrapper"
 date: 2026-03-19
 categories: books ai
+tags: [AI, learning, software engineering, book review, developer skills]
 author: Aleksandar Ilic
+description: "A review of The Skill Code through the lens of AI automation, developer learning loops, mentorship, and long-term software engineering skill development."
+related_posts:
+  - learning-start-with-desire
+  - talk-about-tech-leads
 header:
   overlay_image: /assets/images/skill-code-split.png
   overlay_filter: rgba(0, 0, 0, 0.5)
@@ -32,6 +37,8 @@ Beane breaks this down into the Skill Code: Challenge, Complexity, and Connectio
 The core bug in the modern workplace is simple: AI is eating the "near zone."
 
 You don't level up by doing tutorial-level garbage, and you don't level up by trying to write a custom kernel from scratch on day one. You level up in the near zone—that sweet spot where the problem is just hard enough to make you sweat, but not so hard that you wipe the production database. For a junior dev, that's writing unit tests or debugging legacy spaghetti code. For a junior surgeon, it's closing incisions.
+
+That only works if the person actually wants to learn, which is why [Learning starts with desire]({% post_url 2022-08-14-learning-start-with-desire %}) lands on the same core principle from a different angle.
 
 That's exactly the grunt work AI automates first.
 

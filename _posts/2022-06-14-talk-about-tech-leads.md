@@ -4,7 +4,11 @@ date: 2021-06-11
 header:
 image: "/images/main-header.jpg"
 tags: [tech leads, team, growth, career, leadership]
-excerpt: "career ladder"
+excerpt: "A detailed engineering career ladder covering senior engineers, tech leads, engineering managers, and staff-plus expectations."
+description: "An engineering career ladder that explains how senior engineers, tech leads, managers, and staff-level leaders grow in scope, influence, and architectural responsibility."
+related_posts:
+  - system-design1
+  - talk-software-architechture-lassme
 ---
 {: .text-left}
 ## Text Career Ladder, public Rent a runaway example

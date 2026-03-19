@@ -3,8 +3,10 @@ title: "Learning starts with desire"
 date: 2022-08-14
 header:
 image: "/images/main-header.jpg"
-tags: [newsletter, blogs]
-excerpt: "learning"
+tags: [newsletter, blogs, learning, motivation, deliberate practice]
+excerpt: "Learning starts with desire because real progress depends on curiosity, emotional commitment, and the willingness to keep practicing."
+related_posts:
+  - skill-code-book-review
 ---
 ### Learning starts with desire
 link: https://www.stewfortier.com/p/learning-starts-with-desire

@@ -148,6 +148,34 @@
   </script>
 {% endif %}
 
+{% if page.date %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ page.title | markdownify | strip_html | strip_newlines | escape_once | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "image": {{ page_large_image | default: page_teaser_image | jsonify }},
+      "author": {
+        "@type": "Person",
+        "name": {{ site.author.name | jsonify }},
+        "url": {{ site.author.uri | jsonify }}
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ site.name | jsonify }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ site_og_image | jsonify }}
+        }
+      }
+    }
+  </script>
+{% endif %}
+
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 {% endif %}

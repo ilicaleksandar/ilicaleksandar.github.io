@@ -27,9 +27,20 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-          {% endif %}
+          <div class="article-meta-bar">
+            {% if page.read_time %}
+              <span class="article-meta-bar__item"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</span>
+            {% endif %}
+            {% if page.date %}
+              <span class="article-meta-bar__item"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ page.date | date: "%B %d, %Y" }}</span>
+            {% endif %}
+            {% if page.last_modified_at %}
+              <span class="article-meta-bar__item"><i class="fas fa-sync-alt" aria-hidden="true"></i> Updated {{ page.last_modified_at | date: "%B %d, %Y" }}</span>
+            {% endif %}
+            {% if page.categories.size > 0 %}
+              <span class="article-meta-bar__item"><i class="fas fa-folder" aria-hidden="true"></i> {{ page.categories | join: ", " }}</span>
+            {% endif %}
+          </div>
         </header>
       {% endunless %}
 
@@ -61,6 +72,11 @@ layout: default
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
+
+      <a href="{{ '/articles/' | relative_url }}" class="back-to-articles">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Articles
+      </a>
     </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
@@ -69,7 +85,38 @@ layout: default
   </article>
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
+  {% capture explicit_related_posts %}
+    {% if page.related_posts %}
+      {% for related_ref in page.related_posts %}
+        {% for post in site.posts %}
+          {% assign is_explicit_related = false %}
+          {% if post.id != page.id and post.slug == related_ref %}
+            {% assign is_explicit_related = true %}
+          {% endif %}
+          {% if post.id != page.id and post.url == related_ref %}
+            {% assign is_explicit_related = true %}
+          {% endif %}
+          {% if post.id != page.id and post.id == related_ref %}
+            {% assign is_explicit_related = true %}
+          {% endif %}
+          {% if is_explicit_related %}
+            {% include archive-single.html type="grid" %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+  {% endcapture %}
+  {% assign explicit_related_posts = explicit_related_posts | strip %}
+
+  {% if page.id and page.related and explicit_related_posts != "" %}
+    <div class="page__related">
+      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
+      <div class="grid__wrapper">
+        {{ explicit_related_posts }}
+      </div>
+    </div>
+  {% elsif page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
       <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
       <div class="grid__wrapper">

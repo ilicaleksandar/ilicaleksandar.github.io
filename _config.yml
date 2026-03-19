@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "⚡"
+title                    : "🏛"
 title_separator          : "-"
 name                     : "Aleksandar Ilic"
 description              : "Essays on system design, software engineering, AI, and technical leadership."
@@ -17,7 +17,7 @@ url                      : "https://ilicaleksandar.github.io"# the base hostname
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/images/main-header.jpg"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
@@ -71,9 +71,11 @@ og_image                 : "/images/main-header.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : Aleksandar Ilic
+  links:
+    - https://github.com/acailic
+    - https://www.linkedin.com/in/ilic-aleksandar-pulkit/
 
 # Analytics
 analytics:
