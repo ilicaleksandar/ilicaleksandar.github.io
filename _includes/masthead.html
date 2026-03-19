@@ -1,8 +1,9 @@
-<div class="masthead">
+<div class="masthead" data-header>
   <div class="masthead__inner-wrap">
+    <div class="masthead__glow"></div>
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+        <a class="site-title" href="{{ '/' | absolute_url }}"><span class="site-title__text">{{ site.title }}</span></a>
         <ul class="visible-links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
@@ -10,8 +11,11 @@
             {% else %}
               {% assign domain = site.url | append: site.baseurl %}
             {% endif %}
-            <li class="masthead__menu-item">
-              <a href="{{ domain }}{{ link.url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+            <li class="masthead__menu-item{% if page.url == link.url %} is-active{% endif %}" style="--i: {{ forloop.index0 }}">
+              <a href="{{ domain }}{{ link.url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>
+                {{ link.title }}
+                <span class="nav-link__line"></span>
+              </a>
             </li>
           {% endfor %}
         </ul>
@@ -30,4 +34,5 @@
       </nav>
     </div>
   </div>
+  <div class="masthead__border"></div>
 </div>
