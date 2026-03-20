@@ -255,6 +255,13 @@ body::after {
   padding-top: var(--masthead-offset);
 }
 
+@media (min-width: 64em) {
+  .layout--home .archive {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
 .hero-editorial::before {
   content: "";
   position: absolute;
