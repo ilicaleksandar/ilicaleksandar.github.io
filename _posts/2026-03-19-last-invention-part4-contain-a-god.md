@@ -3,7 +3,7 @@ layout: single
 title: "🧠 The Last Invention Part 4: How to Contain a God"
 date: 2026-03-19
 categories: ai
-tags: [AI, superintelligence, Nick Bostrom, book review]
+tags: [ai, superintelligence, nick bostrom, book review]
 author: Aleksandar Ilic
 description: "The control problem: how do we ensure a superintelligent system does what we want?"
 header:

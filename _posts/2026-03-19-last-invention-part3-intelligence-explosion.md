@@ -3,7 +3,7 @@ layout: single
 title: "🧠 The Last Invention Part 3: The Intelligence Explosion"
 date: 2026-03-19
 categories: ai
-tags: [AI, superintelligence, Nick Bostrom, book review]
+tags: [ai, superintelligence, nick bostrom, book review]
 author: Aleksandar Ilic
 description: "When recursive self-improvement kicks in, the speed of takeoff determines everything."
 header:

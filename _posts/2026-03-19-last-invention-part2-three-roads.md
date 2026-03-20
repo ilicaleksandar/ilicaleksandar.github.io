@@ -3,7 +3,7 @@ layout: single
 title: "🧠 The Last Invention Part 2: Three Roads to the Same Destination"
 date: 2026-03-19
 categories: ai
-tags: [AI, superintelligence, Nick Bostrom, book review]
+tags: [ai, superintelligence, nick bostrom, book review]
 author: Aleksandar Ilic
 description: "Three paths to superintelligence: AI, whole brain emulation, and biological cognition."
 header:

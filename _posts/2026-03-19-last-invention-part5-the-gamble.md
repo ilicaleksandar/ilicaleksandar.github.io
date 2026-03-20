@@ -3,7 +3,7 @@ layout: single
 title: "🧠 The Last Invention Part 5: The Gamble of Our Lifetime"
 date: 2026-03-19
 categories: ai
-tags: [AI, superintelligence, Nick Bostrom, book review]
+tags: [ai, superintelligence, nick bostrom, book review]
 author: Aleksandar Ilic
 description: "The objections, counterarguments, and what we should actually do about superintelligence."
 header:

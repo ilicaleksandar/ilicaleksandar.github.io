@@ -4,17 +4,22 @@ layout: archive
 
 {{ content }}
 
-{% comment %}<!-- Collect all unique tags across posts -->{% endcomment %}
+{% comment %}<!-- Collect all unique tags across posts (case-insensitive) -->{% endcomment %}
 {% assign all_tags = "" | split: "" %}
+{% assign all_tags_lower = "" | split: "" %}
 {% for post in site.posts %}
   {% for tag in post.tags %}
-    {% unless all_tags contains tag %}
+    {% assign tag_lower = tag | downcase %}
+    {% unless all_tags_lower contains tag_lower %}
       {% assign all_tags = all_tags | push: tag %}
+      {% assign all_tags_lower = all_tags_lower | push: tag_lower %}
     {% endunless %}
   {% endfor %}
   {% for cat in post.categories %}
-    {% unless all_tags contains cat %}
+    {% assign cat_lower = cat | downcase %}
+    {% unless all_tags_lower contains cat_lower %}
       {% assign all_tags = all_tags | push: cat %}
+      {% assign all_tags_lower = all_tags_lower | push: cat_lower %}
     {% endunless %}
   {% endfor %}
 {% endfor %}
