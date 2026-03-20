@@ -321,6 +321,12 @@ body::after {
   margin: 0 0.15em;
 }
 
+@media (max-width: 1180px) and (min-width: 769px) {
+  .hero-editorial__title {
+    font-size: clamp(3rem, 8.2vw, 6.4rem);
+  }
+}
+
 .hero-editorial__sub {
   max-width: 32rem;
   font-size: 1.1rem;
