@@ -10,11 +10,11 @@ related_posts:
   - learning-start-with-desire
   - talk-about-tech-leads
 header:
-  overlay_image: /assets/images/skill-code-split.png
+  overlay_image: /assets/images/skill-code-hero-cover.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
   caption: "AI is eating the near zone"
-  teaser: /assets/images/skill-code-split.png
-og_image: /assets/images/skill-code-split.png
+  teaser: /assets/images/skill-code-hero-cover.jpg
+og_image: /assets/images/skill-code-hero-cover.jpg
 excerpt: "Matt Beane's research reveals how AI automation is destroying the learning pathway for junior developers."
 ---
 
