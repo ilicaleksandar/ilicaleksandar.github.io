@@ -1,21 +1,21 @@
 /* ═══════════════════════════════════════════════════════════
    AWWWARDS-LEVEL CUSTOM STYLES
-   Cinematic dark editorial theme
+   Editorial light theme
    ═══════════════════════════════════════════════════════════ */
 
 :root {
-  --brand: #a78bfa;
-  --brand-glow: rgba(167, 139, 250, 0.35);
-  --brand-strong: #c4b5fd;
-  --surface-0: #050508;
-  --surface-1: #0a0a10;
-  --surface-2: #111118;
-  --surface-3: #18181f;
-  --border: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(167, 139, 250, 0.3);
-  --text-primary: #f0f0f5;
-  --text-secondary: #a0a0b4;
-  --text-tertiary: #6b6b82;
+  --brand: #6651e6;
+  --brand-glow: rgba(102, 81, 230, 0.18);
+  --brand-strong: #4f3cc7;
+  --surface-0: #f6f3ee;
+  --surface-1: #fcfbf8;
+  --surface-2: #ffffff;
+  --surface-3: #ddd7cf;
+  --border: rgba(31, 35, 52, 0.1);
+  --border-hover: rgba(102, 81, 230, 0.24);
+  --text-primary: #17161f;
+  --text-secondary: #50566a;
+  --text-tertiary: #83899a;
   --radius-sm: 12px;
   --radius-md: 20px;
   --radius-lg: 28px;
@@ -52,7 +52,7 @@ body::after {
 
 ::selection {
   background: var(--brand);
-  color: #050508;
+  color: #fff;
 }
 
 /* ── Masthead / Nav ─────────────────────────────────────── */
@@ -78,10 +78,10 @@ body::after {
 }
 
 .masthead.is-scrolled {
-  background: rgba(5, 5, 8, 0.85);
+  background: rgba(252, 251, 248, 0.82);
   backdrop-filter: blur(24px) saturate(1.4);
   -webkit-backdrop-filter: blur(24px) saturate(1.4);
-  box-shadow: 0 1px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 40px rgba(42, 35, 23, 0.08);
 }
 
 .masthead.is-hidden {
@@ -358,7 +358,7 @@ body::after {
 
 .hero-editorial__cta:hover {
   background: var(--brand);
-  color: var(--surface-0);
+  color: #fff;
   border-color: var(--brand);
   transform: translateY(-2px);
   box-shadow: 0 8px 30px var(--brand-glow);
@@ -496,7 +496,7 @@ body::after {
 .feature-card:hover {
   border-color: var(--border-hover);
   transform: translateY(-6px);
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--border-hover);
+  box-shadow: 0 24px 64px rgba(32, 35, 52, 0.14), 0 0 0 1px var(--border-hover);
 }
 
 .feature-card:hover::before {
@@ -713,11 +713,12 @@ body::after {
   letter-spacing: -0.03em;
   line-height: 1.1;
   max-width: 18ch;
+  color: #fff;
 }
 
 .page__hero--overlay .page__lead {
   max-width: 42rem;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -802,7 +803,7 @@ body::after {
 .author__avatar img {
   border: 2px solid var(--border);
   border-radius: var(--radius-md);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 40px rgba(32, 35, 52, 0.12);
   transition: transform 0.5s var(--ease-out-expo);
 }
 
@@ -908,7 +909,7 @@ body::after {
   height: 2.75rem;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(10, 10, 16, 0.8);
+  background: rgba(255, 255, 255, 0.86);
   color: var(--text-secondary);
   transition: color 0.25s var(--ease-out-expo), border-color 0.25s var(--ease-out-expo), background 0.25s var(--ease-out-expo), transform 0.25s var(--ease-out-expo);
 }
@@ -950,10 +951,10 @@ body::after {
   list-style: none;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  background: rgba(10, 10, 16, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 24px 64px rgba(32, 35, 52, 0.14);
 }
 
 .greedy-nav .hidden-links::before,
@@ -1057,7 +1058,7 @@ body::after {
 
 .page__hero-caption {
   font-size: 0.68rem;
-  color: var(--text-tertiary);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 /* ── Paginator ──────────────────────────────────────────── */
@@ -1101,7 +1102,7 @@ body::after {
 .page__related .archive__item:hover {
   border-color: var(--border-hover);
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 32px rgba(32, 35, 52, 0.12);
 }
 
 /* ── Post Pagination (prev/next) ───────────────────────── */
@@ -1117,7 +1118,7 @@ body::after {
   border-color: var(--border-hover) !important;
   color: var(--brand) !important;
   background: var(--surface-2) !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 4px 16px rgba(32, 35, 52, 0.12) !important;
 }
 
 /* ── Responsive ─────────────────────────────────────────── */
@@ -1359,7 +1360,7 @@ body::after {
 .about-grid__item:hover {
   border-color: var(--border-hover);
   transform: translateY(-4px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--border-hover);
+  box-shadow: 0 20px 50px rgba(32, 35, 52, 0.12), 0 0 0 1px var(--border-hover);
 }
 
 .about-grid__item:hover::before {
