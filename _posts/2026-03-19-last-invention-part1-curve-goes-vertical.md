@@ -2,7 +2,6 @@
 layout: single
 title: "🧠 The Last Invention Part 1: When the Curve Goes Vertical"
 date: 2026-03-19
- tags: [ai, superintelligence, nickbostrom, book review]
 tags: [ai, superintelligence, nick bostrom, book review]
 author: Aleksandar Ilic
 description: "Why superintelligence makes the industrial revolution look like a rounding error."
