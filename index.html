@@ -11,12 +11,12 @@ classes:
     <div class="home-intro__text">
       <span class="hero-editorial__eyebrow">Senior Software Engineer &middot; Novi Sad, Serbia</span>
       <h1 class="home-intro__title">Hi, I'm <span class="home-intro__name">Aleksandar</span>.</h1>
-      <p class="home-intro__lead">I build backend platforms and distributed systems. For about ten years I've worked across insurance, Swiss pensions (BVG), digital identity and adtech &mdash; most recently as the sole engineer on an enterprise insurance platform.</p>
+      <p class="home-intro__lead">I build backend platforms and distributed systems. For about ten years I've designed and shipped software in insurtech, Swiss pensions, digital identity and adtech &mdash; domains where correctness, scale and regulation all matter.</p>
       <p class="home-intro__lead">Here I write about system design, AI and the discipline behind software that lasts. On the side I build open-source tools for developers.</p>
       <ul class="home-intro__facts">
         <li><strong>10 yrs</strong><span>building production systems</span></li>
         <li><strong>Claude Certified Architect</strong><span>Professional &middot; Anthropic</span></li>
-        <li><strong>Previously</strong><span>Daon &middot; LiveRamp &middot; Improve Digital</span></li>
+        <li><strong>Domains</strong><span>Insurtech &middot; Pensions &middot; Identity &middot; Adtech</span></li>
       </ul>
       <div class="home-intro__actions">
         <a href="/articles/" class="hero-editorial__cta home-intro__cta--primary">
@@ -40,33 +40,64 @@ classes:
 </section>
 
 <section class="home-projects" data-reveal>
-  <h2 class="section-label">What I'm building</h2>
+  <h2 class="section-label">Open source</h2>
   <div class="project-grid">
-    <a class="feature-card project-card" href="https://github.com/acailic/agent_debugger">
-      <span class="feature-card__eyebrow">Python &middot; React</span>
+    <a class="feature-card project-card" href="https://github.com/acailic/agent_debugger" data-repo="agent_debugger">
+      <span class="project-card__top">
+        <span class="feature-card__eyebrow">Python &middot; React</span>
+        <span class="project-card__stars" aria-label="GitHub stars"></span>
+      </span>
       <h3 class="feature-card__title">Agent Debugger</h3>
       <span class="feature-card__meta">Local-first debugger for LLM agents: replay, failure memory, smart highlights and drift detection.</span>
       <span class="feature-card__arrow">&rarr;</span>
     </a>
-    <a class="feature-card project-card" href="https://github.com/acailic/system-design-atlas">
-      <span class="feature-card__eyebrow">System design</span>
-      <h3 class="feature-card__title">System Design Atlas</h3>
-      <span class="feature-card__meta">Learn system design by reading great open-source code: architecture deep-dives and reading paths.</span>
-      <span class="feature-card__arrow">&rarr;</span>
-    </a>
-    <a class="feature-card project-card" href="https://github.com/acailic/mailchat-vault">
-      <span class="feature-card__eyebrow">Rust &middot; Tauri</span>
+    <a class="feature-card project-card" href="https://github.com/acailic/mailchat-vault" data-repo="mailchat-vault">
+      <span class="project-card__top">
+        <span class="feature-card__eyebrow">Rust &middot; Tauri</span>
+        <span class="project-card__stars" aria-label="GitHub stars"></span>
+      </span>
       <h3 class="feature-card__title">Mailchat Vault</h3>
-      <span class="feature-card__meta">A private, offline archive for email and chats. Import Gmail, WhatsApp, Telegram and more, then search locally.</span>
+      <span class="feature-card__meta">Private, offline archive for email and chats. Import Gmail, WhatsApp, Telegram and more, then search everything locally.</span>
       <span class="feature-card__arrow">&rarr;</span>
     </a>
-    <a class="feature-card project-card" href="https://github.com/acailic/ai-engineer-path">
-      <span class="feature-card__eyebrow">Learning path</span>
-      <h3 class="feature-card__title">AI Engineer Path</h3>
-      <span class="feature-card__meta">From zero to professional AI engineer: agents, evaluation, safety and production ML from open university courses.</span>
+    <a class="feature-card project-card" href="https://github.com/acailic/system-design-atlas" data-repo="system-design-atlas">
+      <span class="project-card__top">
+        <span class="feature-card__eyebrow">JavaScript</span>
+        <span class="project-card__stars" aria-label="GitHub stars"></span>
+      </span>
+      <h3 class="feature-card__title">System Design Atlas</h3>
+      <span class="feature-card__meta">Learn system design by reading great open-source code: architecture deep-dives, reading paths and design lessons.</span>
+      <span class="feature-card__arrow">&rarr;</span>
+    </a>
+    <a class="feature-card project-card" href="https://github.com/acailic/paper-implementer" data-repo="paper-implementer">
+      <span class="project-card__top">
+        <span class="feature-card__eyebrow">Python &middot; Agents</span>
+        <span class="project-card__stars" aria-label="GitHub stars"></span>
+      </span>
+      <h3 class="feature-card__title">Paper Implementer</h3>
+      <span class="feature-card__meta">Autonomous agent that reads, breaks down and re-implements the most-cited machine learning papers.</span>
+      <span class="feature-card__arrow">&rarr;</span>
+    </a>
+    <a class="feature-card project-card" href="https://github.com/acailic/SayItErmano" data-repo="SayItErmano">
+      <span class="project-card__top">
+        <span class="feature-card__eyebrow">Python &middot; Linux</span>
+        <span class="project-card__stars" aria-label="GitHub stars"></span>
+      </span>
+      <h3 class="feature-card__title">SayItErmano</h3>
+      <span class="feature-card__meta">Local voice dictation for Linux: press a key, speak, and on-device Whisper types the text into any app.</span>
+      <span class="feature-card__arrow">&rarr;</span>
+    </a>
+    <a class="feature-card project-card" href="https://github.com/acailic/vizuelni-admin" data-repo="vizuelni-admin">
+      <span class="project-card__top">
+        <span class="feature-card__eyebrow">TypeScript</span>
+        <span class="project-card__stars" aria-label="GitHub stars"></span>
+      </span>
+      <h3 class="feature-card__title">Vizuelni Admin</h3>
+      <span class="feature-card__meta">Tool for exploring and visualizing Serbian open government data.</span>
       <span class="feature-card__arrow">&rarr;</span>
     </a>
   </div>
+  <a class="home-intro__link project-grid__more" href="https://github.com/acailic?tab=repositories">All repositories on GitHub &rarr;</a>
 </section>
 
 <section class="home-featured" data-reveal>
@@ -94,3 +125,21 @@ classes:
     {% endif %}
   </div>
 </section>
+
+<script>
+  (function () {
+    var cards = document.querySelectorAll('.project-card[data-repo]');
+    if (!cards.length || !window.fetch) { return; }
+    fetch('https://api.github.com/users/acailic/repos?per_page=100&type=owner')
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (repos) {
+        var stars = {};
+        repos.forEach(function (repo) { stars[repo.name.toLowerCase()] = repo.stargazers_count; });
+        cards.forEach(function (card) {
+          var n = stars[card.getAttribute('data-repo').toLowerCase()];
+          if (n > 0) { card.querySelector('.project-card__stars').textContent = '\u2605 ' + n; }
+        });
+      })
+      .catch(function () {});
+  })();
+</script>
