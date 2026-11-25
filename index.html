@@ -1,33 +1,76 @@
 ---
 layout: home
 author_profile: false
-seo_title: "Aleksandar Ilic - Systems, Software & Craft"
+seo_title: "Aleksandar Ilic - Senior Software Engineer"
 classes:
   - landing
 ---
 
-<section class="hero-editorial" data-reveal>
-  <div class="hero-editorial__inner">
-    <span class="hero-editorial__eyebrow">Essays & Engineering</span>
-    <h1 class="hero-editorial__title">
-      <span class="hero-editorial__line">Systems,</span>
-      <span class="hero-editorial__line">Software<span class="hero-editorial__amp">&</span></span>
-      <span class="hero-editorial__line">Craft</span>
-    </h1>
-    <p class="hero-editorial__sub">Writing on architecture, AI, and the discipline behind building things that last.</p>
-    <a href="/articles/" class="hero-editorial__cta">
-      <span>Read articles</span>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </a>
+<section class="home-intro" data-reveal>
+  <div class="home-intro__inner">
+    <div class="home-intro__text">
+      <span class="hero-editorial__eyebrow">Senior Software Engineer &middot; Novi Sad, Serbia</span>
+      <h1 class="home-intro__title">Hi, I'm <span class="home-intro__name">Aleksandar</span>.</h1>
+      <p class="home-intro__lead">I build backend platforms and distributed systems. For about ten years I've worked across insurance, Swiss pensions (BVG), digital identity and adtech &mdash; most recently as the sole engineer on an enterprise insurance platform.</p>
+      <p class="home-intro__lead">Here I write about system design, AI and the discipline behind software that lasts. On the side I build open-source tools for developers.</p>
+      <ul class="home-intro__facts">
+        <li><strong>10 yrs</strong><span>building production systems</span></li>
+        <li><strong>Claude Certified Architect</strong><span>Professional &middot; Anthropic</span></li>
+        <li><strong>Previously</strong><span>Daon &middot; LiveRamp &middot; Improve Digital</span></li>
+      </ul>
+      <div class="home-intro__actions">
+        <a href="/articles/" class="hero-editorial__cta home-intro__cta--primary">
+          <span>Read articles</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/about/" class="home-intro__link">More about me</a>
+        <a href="https://github.com/acailic" class="home-intro__link">GitHub</a>
+        <a href="https://www.linkedin.com/in/ilic-aleksandar-pulkit/" class="home-intro__link">LinkedIn</a>
+        <a href="mailto:alexilic92@gmail.com" class="home-intro__link">Email</a>
+      </div>
+    </div>
+    <figure class="home-intro__portrait">
+      <img src="{{ '/images/aleksandar_linkedin.png' | relative_url }}" alt="Portrait of Aleksandar Ilic" width="300" height="300">
+      <figcaption>
+        <strong>Aleksandar Ilic</strong>
+        <span>Systems &middot; Software &middot; Craft</span>
+      </figcaption>
+    </figure>
   </div>
-  <div class="hero-editorial__scroll-hint" aria-hidden="true">
-    <span>Scroll</span>
-    <div class="hero-editorial__scroll-line"></div>
+</section>
+
+<section class="home-projects" data-reveal>
+  <h2 class="section-label">What I'm building</h2>
+  <div class="project-grid">
+    <a class="feature-card project-card" href="https://github.com/acailic/agent_debugger">
+      <span class="feature-card__eyebrow">Python &middot; React</span>
+      <h3 class="feature-card__title">Agent Debugger</h3>
+      <span class="feature-card__meta">Local-first debugger for LLM agents: replay, failure memory, smart highlights and drift detection.</span>
+      <span class="feature-card__arrow">&rarr;</span>
+    </a>
+    <a class="feature-card project-card" href="https://github.com/acailic/system-design-atlas">
+      <span class="feature-card__eyebrow">System design</span>
+      <h3 class="feature-card__title">System Design Atlas</h3>
+      <span class="feature-card__meta">Learn system design by reading great open-source code: architecture deep-dives and reading paths.</span>
+      <span class="feature-card__arrow">&rarr;</span>
+    </a>
+    <a class="feature-card project-card" href="https://github.com/acailic/mailchat-vault">
+      <span class="feature-card__eyebrow">Rust &middot; Tauri</span>
+      <h3 class="feature-card__title">Mailchat Vault</h3>
+      <span class="feature-card__meta">A private, offline archive for email and chats. Import Gmail, WhatsApp, Telegram and more, then search locally.</span>
+      <span class="feature-card__arrow">&rarr;</span>
+    </a>
+    <a class="feature-card project-card" href="https://github.com/acailic/ai-engineer-path">
+      <span class="feature-card__eyebrow">Learning path</span>
+      <h3 class="feature-card__title">AI Engineer Path</h3>
+      <span class="feature-card__meta">From zero to professional AI engineer: agents, evaluation, safety and production ML from open university courses.</span>
+      <span class="feature-card__arrow">&rarr;</span>
+    </a>
   </div>
 </section>
 
 <section class="home-featured" data-reveal>
-  <h2 class="section-label">Featured</h2>
+  <h2 class="section-label">Featured writing</h2>
   <div class="feature-grid">
     {% assign featured_system_post = site.posts | where: "slug", "system-design1" | first %}
     {% assign featured_ai_post = site.posts | where: "slug", "skill-code-book-review" | first %}
