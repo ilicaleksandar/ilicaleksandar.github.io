@@ -1833,3 +1833,28 @@ body::after {
     padding: 0 1.25rem;
   }
 }
+
+.project-card__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-card__stars {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.project-grid__more {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
